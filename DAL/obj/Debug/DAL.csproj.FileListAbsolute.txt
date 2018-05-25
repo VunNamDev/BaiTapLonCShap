@@ -1,0 +1,6 @@
+C:\Users\Dell ALL\documents\visual studio 2015\Projects\BaiTapLonCShap\DAL\bin\Debug\DAL.dll
+C:\Users\Dell ALL\documents\visual studio 2015\Projects\BaiTapLonCShap\DAL\bin\Debug\DAL.pdb
+C:\Users\Dell ALL\documents\visual studio 2015\Projects\BaiTapLonCShap\DAL\bin\Debug\DTO.dll
+C:\Users\Dell ALL\documents\visual studio 2015\Projects\BaiTapLonCShap\DAL\bin\Debug\DTO.pdb
+C:\Users\Dell ALL\documents\visual studio 2015\Projects\BaiTapLonCShap\DAL\obj\Debug\DAL.dll
+C:\Users\Dell ALL\documents\visual studio 2015\Projects\BaiTapLonCShap\DAL\obj\Debug\DAL.pdb
