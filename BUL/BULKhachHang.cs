@@ -9,39 +9,28 @@ namespace BUL
 {
     public class BULKhachHang
     {
-        KhachHang x;
-
-        DALKhachHang kh = new DALKhachHang();
-
-        public KhachHang X
-        {
-            get
-            {
-                return x;
-            }
-
-            set
-            {
-                x = value;
-            }
-        }
+        DALKhachHang dallKH = new DALKhachHang();
 
         public List<KhachHang> layTatCaKhachHang()
         {
-            return kh.layKH();
+            return dallKH.layKH();
         }
-        public void update()
+        public List<KhachHang> layTatCaKhachHang(KhachHang kh )
         {
-            kh.suaKhachHang(x);
+            return dallKH.layKH(kh);
         }
-        public void insert()
+        public void sua(KhachHang kh)
         {
-            kh.themKhachHang(x);
+            dallKH.suaKhachHang(kh);
+        }
+        public void them(KhachHang kh)
+        {
+            dallKH.themKhachHang(kh);
 
         }
-        public void delete()
+        public void xoa(KhachHang kh)
         {
-            kh.xoaKhachHang(x);
+            dallKH.xoaKhachHang(kh);
         }
     }
 }

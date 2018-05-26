@@ -13,6 +13,10 @@ namespace BaiTapLonCShap
 {
     public partial class frmThemLichSuGia : Form
     {
+        
+        public event EventHandler btn_Click;
+        BULHang bulHang = new BULHang();
+        BULLichSuGia bulLSG = new BULLichSuGia();
         public frmThemLichSuGia()
         {
             InitializeComponent();
@@ -20,18 +24,22 @@ namespace BaiTapLonCShap
 
         private void frmThemLichSuGia_Load(object sender, EventArgs e)
         {
+          
+            txtNgayCapNhat.Text = DateTime.Now.ToString("dd/MM/yyyy") + "";
+            cboMaHang.DataSource = bulHang.layTatCaHang();
+            cboMaHang.DisplayMember = "tenHang";
+            cboMaHang.ValueMember = "maHang";
         }
 
         private void dtNgayBatDau_TextChanged(object sender, EventArgs e)
         {
-            DateTime date = DateTime.Parse(dtNgayBatDau.Text);
-            txtNgayBatDau.Text = date.ToString("dd/MM/yyyy");
+            txtNgayBatDau.Text = dtNgayBatDau.Text ;
         }
 
         private void dtNgayKetThuc_TextChanged(object sender, EventArgs e)
         {
-            DateTime date = DateTime.Parse(dtNgayKetThuc.Text);
-            txtNgayKetThuc.Text =  date.ToString("dd/MM/yyyy");
+         
+            txtNgayKetThuc.Text = dtNgayKetThuc.Text ;
         }
 
         private void dtNgayKetThuc_Click(object sender, EventArgs e)
@@ -44,10 +52,24 @@ namespace BaiTapLonCShap
          
         }
 
-        private void dtNgayCapNhat_TextChanged(object sender, EventArgs e)
+    
+
+        private void btnThem_Click(object sender, EventArgs e)
         {
-            DateTime date = DateTime.Parse(dtNgayCapNhat.Text + "");
-            txtNgayCapNhat.Text = date.ToString("dd/MM/yyyy");
+
+
+            //MessageBox.Show(dtNgayBatDau.Value.ToString("MM/dd/yyyy"));
+            LichSuGia lsg = new LichSuGia(cboMaHang.SelectedValue+"", dtNgayBatDau.Value.ToString("MM/dd/yyyy"),
+                dtNgayKetThuc.Value.ToString("MM/dd/yyyy"),float.Parse(txtDonGia.Text),
+                DateTime.Now.ToString("MM/dd/yyyy"));
+              
+           
+            
+            bulLSG.add(lsg);
+            if (btn_Click != null)
+                btn_Click(sender, e);
+            MessageBox.Show("Thêm lịch sử giá thành công","Thông báo",MessageBoxButtons.OK,MessageBoxIcon.Exclamation);
+            this.Close();
         }
     }
 }

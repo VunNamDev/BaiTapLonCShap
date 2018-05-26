@@ -44,6 +44,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DALHang.cs" />
     <Compile Include="DALKhachHang.cs" />
     <Compile Include="DALLichSuGia.cs" />
     <Compile Include="KetNoiCSDL.cs" />

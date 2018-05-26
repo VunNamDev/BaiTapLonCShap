@@ -8,7 +8,10 @@ namespace DTO
 {
     public class KhachHang
     {
-        private string maKhachHang, hoTen, diaChi, soDienThoai;
+        private string maKhachHang;
+        private string hoTen;
+        private string diaChi;
+        private string soDienThoai;
         public KhachHang()
         {
            
@@ -72,6 +75,10 @@ namespace DTO
             {
                 soDienThoai = value;
             }
+        }
+        public override string ToString()
+        {
+            return base.ToString();
         }
     }
 }

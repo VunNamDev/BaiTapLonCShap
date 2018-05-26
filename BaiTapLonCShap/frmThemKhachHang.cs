@@ -85,8 +85,8 @@ namespace BaiTapLonCShap
         {
             KhachHang k = new KhachHang(txtMaKhachHang.Text, txtTenKhachHang.Text, txtDiaChi.Text, txtSoDienThoai.Text);
 
-            kh.X = k;
-            kh.insert();
+           
+            kh.them(k);
             MessageBox.Show("Thêm khách hàng thành công","Thông báo",MessageBoxButtons.OK);
             if (btnThem != null)
                 btnThem(sender, e);

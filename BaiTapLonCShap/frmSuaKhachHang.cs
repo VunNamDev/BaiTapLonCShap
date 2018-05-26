@@ -16,12 +16,19 @@ namespace BaiTapLonCShap
     {
         public event EventHandler tbnSua_Click;
         BULKhachHang kh = new BULKhachHang();
-
+        KhachHang k = new KhachHang();
+     
         public frmSuaKhachHang()
         {
+            k.MaKhachHang = "";
             InitializeComponent();
         }
-       
+        public frmSuaKhachHang(KhachHang k)
+        {
+            InitializeComponent();
+            this.k = k;
+        }
+
         private void txtMaKhachHang_TextChanged(object sender, EventArgs e)
         {
             
@@ -57,15 +64,13 @@ namespace BaiTapLonCShap
      
         private void frmSuaKhachHang_Load(object sender, EventArgs e)
         {
-
+            txtMaKhachHang.Text = k.MaKhachHang;
         }
 
         private void btnSuaKhachHang_Click(object sender, EventArgs e)
         {
             KhachHang k = new KhachHang(txtMaKhachHang.Text, txtTenKhachHang.Text, txtDiaChi.Text, txtSoDienThoai.Text);
-
-            kh.X = k;
-            kh.update();
+            kh.sua(k);
             MessageBox.Show("Đã sửa thành công","Thông báo", MessageBoxButtons.OK);
             if (tbnSua_Click!=null)
                 tbnSua_Click(sender, e);

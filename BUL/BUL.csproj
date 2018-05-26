@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BULHang.cs" />
     <Compile Include="BULKhachHang.cs" />
     <Compile Include="BULLichSuGia.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

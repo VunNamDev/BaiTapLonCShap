@@ -65,6 +65,12 @@
     <Compile Include="frmSuaKhachHang.Designer.cs">
       <DependentUpon>frmSuaKhachHang.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmSuaLichSuGia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSuaLichSuGia.Designer.cs">
+      <DependentUpon>frmSuaLichSuGia.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmThemKhachHang.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -83,6 +89,12 @@
     <Compile Include="frmXoaKhachHang.Designer.cs">
       <DependentUpon>frmXoaKhachHang.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmXoaLichSuGia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmXoaLichSuGia.Designer.cs">
+      <DependentUpon>frmXoaLichSuGia.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="frmMain.resx">
@@ -90,6 +102,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmSuaKhachHang.resx">
       <DependentUpon>frmSuaKhachHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSuaLichSuGia.resx">
+      <DependentUpon>frmSuaLichSuGia.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmThemKhachHang.resx">
       <DependentUpon>frmThemKhachHang.cs</DependentUpon>
@@ -99,6 +114,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmXoaKhachHang.resx">
       <DependentUpon>frmXoaKhachHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmXoaLichSuGia.resx">
+      <DependentUpon>frmXoaLichSuGia.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

@@ -13,16 +13,23 @@ namespace BaiTapLonCShap
 {
     public partial class frmXoaKhachHang : Form
     {
+        KhachHang x = new KhachHang();
         public event EventHandler btnXoa_click;
         BULKhachHang bulKH = new BULKhachHang();
         public frmXoaKhachHang()
         {
             InitializeComponent();
+            x.MaKhachHang = "";
+        }
+        public frmXoaKhachHang(KhachHang x)
+        {
+            InitializeComponent();
+            this.x = x;
         }
 
         private void frmXoaKhachHang_Load(object sender, EventArgs e)
         {
-
+            txtMaKhachHang.Text = x.MaKhachHang;
         }
         private KhachHang kiemTraTonTai(string text)
         {
@@ -58,13 +65,13 @@ namespace BaiTapLonCShap
 
         private void btnXoaKhachHang_Click(object sender, EventArgs e)
         {
-            bulKH.X = new KhachHang(txtMaKhachHang.Text, txtTenKhachHang.Text, txtDiaChi.Text, txtSoDienThoai.Text);
+            KhachHang kh1  = new KhachHang(txtMaKhachHang.Text, txtTenKhachHang.Text, txtDiaChi.Text, txtSoDienThoai.Text);
 
             DialogResult dl = MessageBox.Show("Xoá khách hàng: " + txtMaKhachHang.Text + " - " + txtTenKhachHang.Text,
                 "Xoá",MessageBoxButtons.YesNo,MessageBoxIcon.Question);
             if(dl==DialogResult.Yes)
             {
-                bulKH.delete();
+                bulKH.xoa(kh1);
                 if (btnXoa_click != null)
                 {
                     btnXoa_click(sender, e);

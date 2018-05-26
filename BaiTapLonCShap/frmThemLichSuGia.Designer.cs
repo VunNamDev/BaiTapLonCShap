@@ -41,13 +41,11 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.buttonX1 = new DevComponents.DotNetBar.ButtonX();
+            this.btnThem = new DevComponents.DotNetBar.ButtonX();
             this.label1 = new System.Windows.Forms.Label();
-            this.dtNgayCapNhat = new DevComponents.Editors.DateTimeAdv.DateTimeInput();
             this.panelEx1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtNgayKetThuc)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtNgayBatDau)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dtNgayCapNhat)).BeginInit();
             this.SuspendLayout();
             // 
             // panelEx1
@@ -55,7 +53,6 @@
             this.panelEx1.CanvasColor = System.Drawing.SystemColors.Control;
             this.panelEx1.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.panelEx1.Controls.Add(this.dtNgayKetThuc);
-            this.panelEx1.Controls.Add(this.dtNgayCapNhat);
             this.panelEx1.Controls.Add(this.dtNgayBatDau);
             this.panelEx1.Controls.Add(this.cboMaHang);
             this.panelEx1.Controls.Add(this.txtNgayKetThuc);
@@ -66,12 +63,12 @@
             this.panelEx1.Controls.Add(this.label4);
             this.panelEx1.Controls.Add(this.label3);
             this.panelEx1.Controls.Add(this.label2);
-            this.panelEx1.Controls.Add(this.buttonX1);
+            this.panelEx1.Controls.Add(this.btnThem);
             this.panelEx1.Controls.Add(this.label1);
             this.panelEx1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelEx1.Location = new System.Drawing.Point(0, 0);
             this.panelEx1.Name = "panelEx1";
-            this.panelEx1.Size = new System.Drawing.Size(434, 329);
+            this.panelEx1.Size = new System.Drawing.Size(434, 331);
             this.panelEx1.Style.Alignment = System.Drawing.StringAlignment.Center;
             this.panelEx1.Style.BackColor1.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground;
             this.panelEx1.Style.BackColor2.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground2;
@@ -99,6 +96,7 @@
             this.dtNgayKetThuc.ButtonDropDown.Visible = true;
             this.dtNgayKetThuc.CustomFormat = "dd/MM/yyyy";
             this.dtNgayKetThuc.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtNgayKetThuc.Format = DevComponents.Editors.eDateTimePickerFormat.Custom;
             this.dtNgayKetThuc.IsPopupCalendarOpen = false;
             this.dtNgayKetThuc.Location = new System.Drawing.Point(358, 127);
             // 
@@ -158,8 +156,9 @@
             this.dtNgayBatDau.BackgroundStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtNgayBatDau.ButtonDropDown.Shortcut = DevComponents.DotNetBar.eShortcut.AltDown;
             this.dtNgayBatDau.ButtonDropDown.Visible = true;
-            this.dtNgayBatDau.CustomFormat = "dd/MM";
+            this.dtNgayBatDau.CustomFormat = "dd/MM/yyyy";
             this.dtNgayBatDau.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtNgayBatDau.Format = DevComponents.Editors.eDateTimePickerFormat.Custom;
             this.dtNgayBatDau.IsPopupCalendarOpen = false;
             this.dtNgayBatDau.Location = new System.Drawing.Point(358, 78);
             // 
@@ -240,6 +239,7 @@
             this.txtNgayCapNhat.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.txtNgayCapNhat.Border.PaddingBottom = 3;
             this.txtNgayCapNhat.Border.PaddingTop = 10;
+            this.txtNgayCapNhat.Enabled = false;
             this.txtNgayCapNhat.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNgayCapNhat.Location = new System.Drawing.Point(201, 210);
             this.txtNgayCapNhat.Multiline = true;
@@ -320,19 +320,20 @@
             this.label2.Text = "Ngày bắt đầu ";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // buttonX1
+            // btnThem
             // 
-            this.buttonX1.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.buttonX1.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.buttonX1.Image = ((System.Drawing.Image)(resources.GetObject("buttonX1.Image")));
-            this.buttonX1.Location = new System.Drawing.Point(201, 264);
-            this.buttonX1.Margin = new System.Windows.Forms.Padding(4);
-            this.buttonX1.Name = "buttonX1";
-            this.buttonX1.Size = new System.Drawing.Size(149, 38);
-            this.buttonX1.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.buttonX1.TabIndex = 8;
-            this.buttonX1.Text = "Thêm lịch sử giá";
-            this.buttonX1.TextAlignment = DevComponents.DotNetBar.eButtonTextAlignment.Left;
+            this.btnThem.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btnThem.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.btnThem.Image = ((System.Drawing.Image)(resources.GetObject("btnThem.Image")));
+            this.btnThem.Location = new System.Drawing.Point(201, 264);
+            this.btnThem.Margin = new System.Windows.Forms.Padding(4);
+            this.btnThem.Name = "btnThem";
+            this.btnThem.Size = new System.Drawing.Size(149, 38);
+            this.btnThem.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.btnThem.TabIndex = 8;
+            this.btnThem.Text = "Thêm lịch sử giá";
+            this.btnThem.TextAlignment = DevComponents.DotNetBar.eButtonTextAlignment.Left;
+            this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
             // 
             // label1
             // 
@@ -341,82 +342,22 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(117, 34);
             this.label1.TabIndex = 7;
-            this.label1.Text = "Mã hàng";
+            this.label1.Text = "Tên hàng";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // dtNgayCapNhat
-            // 
-            // 
-            // 
-            // 
-            this.dtNgayCapNhat.BackgroundStyle.BackColor2SchemePart = DevComponents.DotNetBar.eColorSchemePart.DockSiteBackColor;
-            this.dtNgayCapNhat.BackgroundStyle.BorderBottom = DevComponents.DotNetBar.eStyleBorderType.Solid;
-            this.dtNgayCapNhat.BackgroundStyle.BorderLeft = DevComponents.DotNetBar.eStyleBorderType.Solid;
-            this.dtNgayCapNhat.BackgroundStyle.BorderRight = DevComponents.DotNetBar.eStyleBorderType.Solid;
-            this.dtNgayCapNhat.BackgroundStyle.BorderTop = DevComponents.DotNetBar.eStyleBorderType.Solid;
-            this.dtNgayCapNhat.BackgroundStyle.Class = "DateTimeInputBackground";
-            this.dtNgayCapNhat.BackgroundStyle.CornerDiameter = 10;
-            this.dtNgayCapNhat.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.dtNgayCapNhat.BackgroundStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtNgayCapNhat.ButtonDropDown.Shortcut = DevComponents.DotNetBar.eShortcut.AltDown;
-            this.dtNgayCapNhat.ButtonDropDown.Visible = true;
-            this.dtNgayCapNhat.CustomFormat = "dd/MM";
-            this.dtNgayCapNhat.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtNgayCapNhat.IsPopupCalendarOpen = false;
-            this.dtNgayCapNhat.Location = new System.Drawing.Point(358, 214);
-            // 
-            // 
-            // 
-            this.dtNgayCapNhat.MonthCalendar.AnnuallyMarkedDates = new System.DateTime[0];
-            // 
-            // 
-            // 
-            this.dtNgayCapNhat.MonthCalendar.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.dtNgayCapNhat.MonthCalendar.CalendarDimensions = new System.Drawing.Size(1, 1);
-            this.dtNgayCapNhat.MonthCalendar.ClearButtonVisible = true;
-            // 
-            // 
-            // 
-            this.dtNgayCapNhat.MonthCalendar.CommandsBackgroundStyle.BackColor2SchemePart = DevComponents.DotNetBar.eColorSchemePart.BarBackground2;
-            this.dtNgayCapNhat.MonthCalendar.CommandsBackgroundStyle.BackColorGradientAngle = 90;
-            this.dtNgayCapNhat.MonthCalendar.CommandsBackgroundStyle.BackColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.BarBackground;
-            this.dtNgayCapNhat.MonthCalendar.CommandsBackgroundStyle.BorderTop = DevComponents.DotNetBar.eStyleBorderType.Solid;
-            this.dtNgayCapNhat.MonthCalendar.CommandsBackgroundStyle.BorderTopColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.BarDockedBorder;
-            this.dtNgayCapNhat.MonthCalendar.CommandsBackgroundStyle.BorderTopWidth = 1;
-            this.dtNgayCapNhat.MonthCalendar.CommandsBackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.dtNgayCapNhat.MonthCalendar.DisplayMonth = new System.DateTime(2018, 5, 1, 0, 0, 0, 0);
-            this.dtNgayCapNhat.MonthCalendar.MarkedDates = new System.DateTime[0];
-            this.dtNgayCapNhat.MonthCalendar.MonthlyMarkedDates = new System.DateTime[0];
-            // 
-            // 
-            // 
-            this.dtNgayCapNhat.MonthCalendar.NavigationBackgroundStyle.BackColor2SchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground2;
-            this.dtNgayCapNhat.MonthCalendar.NavigationBackgroundStyle.BackColorGradientAngle = 90;
-            this.dtNgayCapNhat.MonthCalendar.NavigationBackgroundStyle.BackColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground;
-            this.dtNgayCapNhat.MonthCalendar.NavigationBackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.dtNgayCapNhat.MonthCalendar.TodayButtonVisible = true;
-            this.dtNgayCapNhat.MonthCalendar.WeeklyMarkedDays = new System.DayOfWeek[0];
-            this.dtNgayCapNhat.Name = "dtNgayCapNhat";
-            this.dtNgayCapNhat.Size = new System.Drawing.Size(18, 27);
-            this.dtNgayCapNhat.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.dtNgayCapNhat.TabIndex = 15;
-            this.dtNgayCapNhat.TabStop = false;
-            this.dtNgayCapNhat.Value = new System.DateTime(2018, 5, 22, 14, 13, 29, 0);
-            this.dtNgayCapNhat.TextChanged += new System.EventHandler(this.dtNgayCapNhat_TextChanged);
             // 
             // frmThemLichSuGia
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(434, 329);
+            this.ClientSize = new System.Drawing.Size(434, 331);
             this.Controls.Add(this.panelEx1);
             this.Name = "frmThemLichSuGia";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Thêm lịch sử giá";
             this.Load += new System.EventHandler(this.frmThemLichSuGia_Load);
             this.panelEx1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dtNgayKetThuc)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtNgayBatDau)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dtNgayCapNhat)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -428,7 +369,7 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private DevComponents.DotNetBar.ButtonX buttonX1;
+        private DevComponents.DotNetBar.ButtonX btnThem;
         private System.Windows.Forms.Label label1;
         private DevComponents.DotNetBar.Controls.TextBoxX txtNgayCapNhat;
         private System.Windows.Forms.Label label5;
@@ -437,6 +378,5 @@
         private DevComponents.DotNetBar.Controls.TextBoxX txtNgayBatDau;
         private DevComponents.Editors.DateTimeAdv.DateTimeInput dtNgayKetThuc;
         private DevComponents.DotNetBar.Controls.TextBoxX txtNgayKetThuc;
-        private DevComponents.Editors.DateTimeAdv.DateTimeInput dtNgayCapNhat;
     }
 }

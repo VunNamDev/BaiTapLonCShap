@@ -26,6 +26,24 @@ namespace DAL
             KetNoiCSDL.dongKetNoi();
             return arr;
         }
+        public List<KhachHang> layKH(KhachHang kh)
+        {
+            List<KhachHang> arr = new List<KhachHang>();
+            KetNoiCSDL.moKetNoi();
+            string get = "select * from KhachHang where maKhachHang = @maKhachHang";
+            SqlCommand cmd = new SqlCommand(get, KetNoiCSDL.connect);
+            cmd.Parameters.AddWithValue("maKhachHang", kh.MaKhachHang);
+
+            SqlDataReader dr = cmd.ExecuteReader();
+
+            while (dr.Read())
+            {
+                KhachHang x = new KhachHang(dr["maKhachHang"] + "", dr["hoTen"] + "", dr["diaChi"] + "", dr["soDienThoai"] + "");
+                arr.Add(x);
+            }
+            KetNoiCSDL.dongKetNoi();
+            return arr;
+        }
         public void suaKhachHang(KhachHang kh)
         {
             List<KhachHang> arr = new List<KhachHang>();

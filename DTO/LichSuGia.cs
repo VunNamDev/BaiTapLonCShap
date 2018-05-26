@@ -12,7 +12,11 @@ namespace DTO
         private float donGia;
         private string ngayCapNhat;
 
-        private LichSuGia() { }
+        public LichSuGia()
+        {
+            maHang = "";
+            ngayBatDau = "";
+        }
         public string MaHang
         {
             get
