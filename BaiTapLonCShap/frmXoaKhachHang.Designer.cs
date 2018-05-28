@@ -77,12 +77,13 @@
             this.txtSoDienThoai.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.txtSoDienThoai.Border.PaddingBottom = 3;
             this.txtSoDienThoai.Border.PaddingTop = 10;
+            this.txtSoDienThoai.Enabled = false;
             this.txtSoDienThoai.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSoDienThoai.Location = new System.Drawing.Point(201, 169);
             this.txtSoDienThoai.Multiline = true;
             this.txtSoDienThoai.Name = "txtSoDienThoai";
             this.txtSoDienThoai.Size = new System.Drawing.Size(175, 34);
-            this.txtSoDienThoai.TabIndex = 9;
+            this.txtSoDienThoai.TabIndex = 3;
             // 
             // txtDiaChi
             // 
@@ -93,12 +94,13 @@
             this.txtDiaChi.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.txtDiaChi.Border.PaddingBottom = 3;
             this.txtDiaChi.Border.PaddingTop = 10;
+            this.txtDiaChi.Enabled = false;
             this.txtDiaChi.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDiaChi.Location = new System.Drawing.Point(201, 125);
             this.txtDiaChi.Multiline = true;
             this.txtDiaChi.Name = "txtDiaChi";
             this.txtDiaChi.Size = new System.Drawing.Size(175, 34);
-            this.txtDiaChi.TabIndex = 10;
+            this.txtDiaChi.TabIndex = 2;
             // 
             // txtTenKhachHang
             // 
@@ -109,12 +111,13 @@
             this.txtTenKhachHang.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.txtTenKhachHang.Border.PaddingBottom = 3;
             this.txtTenKhachHang.Border.PaddingTop = 10;
+            this.txtTenKhachHang.Enabled = false;
             this.txtTenKhachHang.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTenKhachHang.Location = new System.Drawing.Point(201, 82);
             this.txtTenKhachHang.Multiline = true;
             this.txtTenKhachHang.Name = "txtTenKhachHang";
             this.txtTenKhachHang.Size = new System.Drawing.Size(175, 34);
-            this.txtTenKhachHang.TabIndex = 11;
+            this.txtTenKhachHang.TabIndex = 1;
             // 
             // txtMaKhachHang
             // 
@@ -130,7 +133,7 @@
             this.txtMaKhachHang.Multiline = true;
             this.txtMaKhachHang.Name = "txtMaKhachHang";
             this.txtMaKhachHang.Size = new System.Drawing.Size(175, 34);
-            this.txtMaKhachHang.TabIndex = 12;
+            this.txtMaKhachHang.TabIndex = 0;
             this.txtMaKhachHang.TextChanged += new System.EventHandler(this.txtMaKhachHang_TextChanged);
             // 
             // label4
@@ -174,7 +177,7 @@
             this.btnXoaKhachHang.Name = "btnXoaKhachHang";
             this.btnXoaKhachHang.Size = new System.Drawing.Size(149, 38);
             this.btnXoaKhachHang.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.btnXoaKhachHang.TabIndex = 8;
+            this.btnXoaKhachHang.TabIndex = 4;
             this.btnXoaKhachHang.Text = "Xoá khách hàng";
             this.btnXoaKhachHang.TextAlignment = DevComponents.DotNetBar.eButtonTextAlignment.Left;
             this.btnXoaKhachHang.Click += new System.EventHandler(this.btnXoaKhachHang_Click);

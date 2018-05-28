@@ -47,6 +47,9 @@
     <Compile Include="DALHang.cs" />
     <Compile Include="DALKhachHang.cs" />
     <Compile Include="DALLichSuGia.cs" />
+    <Compile Include="DALLoaiHang.cs" />
+    <Compile Include="DALNhaCungCap.cs" />
+    <Compile Include="DALNhanVien.cs" />
     <Compile Include="KetNoiCSDL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

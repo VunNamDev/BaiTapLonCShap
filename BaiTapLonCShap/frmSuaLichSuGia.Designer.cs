@@ -211,7 +211,7 @@
             this.cboMaHang.Name = "cboMaHang";
             this.cboMaHang.Size = new System.Drawing.Size(175, 31);
             this.cboMaHang.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.cboMaHang.TabIndex = 12;
+            this.cboMaHang.TabIndex = 0;
             this.cboMaHang.SelectedValueChanged += new System.EventHandler(this.cboMaHang_SelectedValueChanged);
             // 
             // txtNgayKetThuc
@@ -223,12 +223,13 @@
             this.txtNgayKetThuc.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.txtNgayKetThuc.Border.PaddingBottom = 3;
             this.txtNgayKetThuc.Border.PaddingTop = 10;
+            this.txtNgayKetThuc.Enabled = false;
             this.txtNgayKetThuc.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNgayKetThuc.Location = new System.Drawing.Point(201, 123);
             this.txtNgayKetThuc.Multiline = true;
             this.txtNgayKetThuc.Name = "txtNgayKetThuc";
             this.txtNgayKetThuc.Size = new System.Drawing.Size(175, 34);
-            this.txtNgayKetThuc.TabIndex = 9;
+            this.txtNgayKetThuc.TabIndex = 2;
             this.txtNgayKetThuc.TextChanged += new System.EventHandler(this.txtNgayKetThuc_TextChanged);
             // 
             // txtNgayCapNhat
@@ -246,7 +247,7 @@
             this.txtNgayCapNhat.Multiline = true;
             this.txtNgayCapNhat.Name = "txtNgayCapNhat";
             this.txtNgayCapNhat.Size = new System.Drawing.Size(175, 34);
-            this.txtNgayCapNhat.TabIndex = 9;
+            this.txtNgayCapNhat.TabIndex = 4;
             this.txtNgayCapNhat.TextChanged += new System.EventHandler(this.txtNgayCapNhat_TextChanged);
             // 
             // txtNgayBatDau
@@ -258,12 +259,13 @@
             this.txtNgayBatDau.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.txtNgayBatDau.Border.PaddingBottom = 3;
             this.txtNgayBatDau.Border.PaddingTop = 10;
+            this.txtNgayBatDau.Enabled = false;
             this.txtNgayBatDau.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNgayBatDau.Location = new System.Drawing.Point(201, 75);
             this.txtNgayBatDau.Multiline = true;
             this.txtNgayBatDau.Name = "txtNgayBatDau";
             this.txtNgayBatDau.Size = new System.Drawing.Size(175, 34);
-            this.txtNgayBatDau.TabIndex = 9;
+            this.txtNgayBatDau.TabIndex = 1;
             this.txtNgayBatDau.TextChanged += new System.EventHandler(this.txtNgayBatDau_TextChanged);
             // 
             // txtDonGia
@@ -280,7 +282,7 @@
             this.txtDonGia.Multiline = true;
             this.txtDonGia.Name = "txtDonGia";
             this.txtDonGia.Size = new System.Drawing.Size(175, 34);
-            this.txtDonGia.TabIndex = 9;
+            this.txtDonGia.TabIndex = 3;
             this.txtDonGia.TextChanged += new System.EventHandler(this.txtDonGia_TextChanged);
             // 
             // label5
@@ -334,7 +336,7 @@
             this.btnSua.Name = "btnSua";
             this.btnSua.Size = new System.Drawing.Size(149, 38);
             this.btnSua.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.btnSua.TabIndex = 8;
+            this.btnSua.TabIndex = 5;
             this.btnSua.Text = "Sửa lịch sử giá";
             this.btnSua.TextAlignment = DevComponents.DotNetBar.eButtonTextAlignment.Left;
             this.btnSua.Click += new System.EventHandler(this.btnSua_Click);

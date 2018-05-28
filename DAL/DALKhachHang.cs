@@ -6,6 +6,8 @@ using System.Threading.Tasks;
 using System.Data.SqlClient;
 using System.Configuration;
 using DTO;
+using System.Data;
+
 namespace DAL
 {
     public class DALKhachHang
@@ -14,8 +16,11 @@ namespace DAL
         {
             List<KhachHang> arr = new List<KhachHang>();
             KetNoiCSDL.moKetNoi();
-            string get = "select * from KhachHang";
+            string get = "select maKhachHang,hoTen,diaChi,soDienThoai from KhachHang";
             SqlCommand cmd = new SqlCommand(get, KetNoiCSDL.connect);
+            DataTable tb = new DataTable();
+            SqlDataAdapter adt = new SqlDataAdapter();
+            
             SqlDataReader dr = cmd.ExecuteReader();
 
             while(dr.Read())

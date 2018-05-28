@@ -49,6 +49,9 @@
     <Compile Include="BULHang.cs" />
     <Compile Include="BULKhachHang.cs" />
     <Compile Include="BULLichSuGia.cs" />
+    <Compile Include="BULLoaiHang.cs" />
+    <Compile Include="BULNhaCungCap.cs" />
+    <Compile Include="BULNhanVien.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -13,9 +13,11 @@ using BUL;
 
 namespace BaiTapLonCShap
 {
+   
     public delegate void ThucThi(bool click);
     public partial class frmMain : Form
     {
+        bool isFormActive = true;
         
         DataTable x = new DataTable();
         public frmMain()
@@ -31,30 +33,35 @@ namespace BaiTapLonCShap
 
         private void btnNhaCungCap_Click(object sender, EventArgs e)
         {
+            loadNhaCungCap();
             tabUC1.SelectedTabIndex = 1;
             loadTab(tabNCC);
         }
 
         private void btnHang_Click(object sender, EventArgs e)
         {
+            loadHang();
             tabUC2.SelectedTabIndex = 0;
             loadTab(tabHang);
         }
 
         private void btnLoaiHang_Click(object sender, EventArgs e)
         {
+            loadLoaiHang();
             tabUC2.SelectedTabIndex = 1;
             loadTab(tabLoaiHang);
         }
 
         private void btnKhachHang_Click(object sender, EventArgs e)
         {
+            loadKhachHang();
             tabUC3.SelectedTabIndex = 0;
             loadTab(tabKhachHang);
         }
 
         private void btnLichSuGia_Click(object sender, EventArgs e)
         {
+            loadLichSuGia();
             tabUC3.SelectedTabIndex = 1;
             loadTab(tabLichSuGia);
         }
@@ -62,7 +69,8 @@ namespace BaiTapLonCShap
         private void frmMain_Load(object sender, EventArgs e)
         {
             loadManHinhBaoCaoDoanhSo();
-            loadThongTin();
+            //loadNhanVien();
+            loadBaoCaoDoanhSoBanHang();
         }
 
 
@@ -86,19 +94,62 @@ namespace BaiTapLonCShap
             cboNam.DataSource = arrNam;
             txtNgayLap.Text = DateTime.Now.ToString("dd/MM/yyyy");
         }
-        public void loadThongTin()
-        {
-            BULKhachHang kh = new BULKhachHang();
-            dgvKhachHang.DataSource = kh.layTatCaKhachHang();
-            dgvKhachHang.Columns["maKhachHang"].DisplayIndex = 0;
+        public void loadBaoCaoDoanhSoBanHang() {
+            BULHang bulH = new BULHang();
+            List<DoanhSoTheoNgay> arrDoanhSo = bulH.layBaoCao(cboThang.Text, cboNam.Text);
+            dgvDoanhSo.DataSource = arrDoanhSo;
 
-            BULLichSuGia lsg = new BULLichSuGia();
-            dgvLichSuGia.DataSource = lsg.layTatCaLichSuGia();
-           
-            BULHang bulHang = new BULHang();
-            dgvHang.DataSource = bulHang.layTatCaHang();
-            
+            dgvDoanhSo.Columns["stt"].HeaderText = "Số thứ tự";
+            dgvDoanhSo.Columns["ngayLap"].HeaderText = "Ngày lập";
+            dgvDoanhSo.Columns["tongTien"].HeaderText = "Doanh thu";
+            List<DoanhSoTheoNgay> arr = new List<DoanhSoTheoNgay>();
+            DoanhSoTheoNgay ngay = new DoanhSoTheoNgay();
+            ngay.TongTien = 0;
+            ngay.Stt = "Tổng tiền";
+            foreach (DoanhSoTheoNgay ds in arrDoanhSo)
+            {
+                ngay.TongTien += ds.TongTien;
+            }
+            arr.Add(ngay);
+            dgvTongGia.DataSource = arr;
         }
+        public void loadNhanVien()
+        {
+
+            //BULNhanVien bulNV = new BULNhanVien();
+            //dgvNhanVien.DataSource = bulNV.laytatCaNhanVien();
+        }
+        public void loadNhaCungCap()
+        {
+            //BULNhaCungCap bulNCC = new BULNhaCungCap();
+            //dgvNhaCungCap.DataSource = bulNCC.layTatCaNhaCungCap();
+        }
+        public void loadHang()
+        {
+
+            //BULHang bulH = new BULHang();
+            //dgvHang.DataSource = bulH.layTatCaHang();
+        }
+        public void loadLoaiHang()
+        {
+
+            //BULLoaiHang bulLH = new BULLoaiHang();
+            //dgvLoaiHang.DataSource = bulLH.layTatCaLoaiHang();
+           
+        }
+        public void loadKhachHang()
+        {
+            BULKhachHang bulKH = new BULKhachHang();
+            dgvKhachHang.DataSource = bulKH.layTatCaKhachHang();
+                    }
+        public void loadLichSuGia()
+        {
+
+            BULLichSuGia bulLSG = new BULLichSuGia();
+            dgvLichSuGia.DataSource = bulLSG.layTatCaLichSuGia();
+        }
+        
+
         private void loadTab(TabItem tabName)
         {
 
@@ -154,19 +205,24 @@ namespace BaiTapLonCShap
         private void btnThemKhachHang_Click(object sender, EventArgs e)
         {
             frmThemKhachHang frmKH = new frmThemKhachHang();
-            frmKH.btnThem += new EventHandler(NhanSuKienClick); 
+            //frmKH.btnThem += new EventHandler(NhanSuKienClick); 
             frmKH.ShowDialog();
         }
         
         private void btnThemLichSuGia_Click(object sender, EventArgs e)
         {
             frmThemLichSuGia themlsg = new frmThemLichSuGia();
-            themlsg.btn_Click += new EventHandler(NhanSuKienClick);
+           // themlsg.btn_Click += new EventHandler(NhanSuKienClick);
             themlsg.ShowDialog();
         }
         void NhanSuKienClick(object sender, EventArgs e)
         {
-            loadThongTin();
+            loadNhanVien();
+            loadNhaCungCap();
+            loadHang();
+            loadLoaiHang();
+            loadKhachHang();
+            loadLichSuGia();
         }
         private void btnSuaKhachHang_Click(object sender, EventArgs e)
         {
@@ -247,12 +303,12 @@ namespace BaiTapLonCShap
 
         private void cboNam_SelectedIndexChanged(object sender, EventArgs e)
         {
-            lblTieuDe.Text += "Báo cáo doanh số tháng " + cboThang.SelectedItem + " năm " + cboNam.SelectedItem;
+            lblTieuDe.Text = "Báo cáo doanh số tháng " + cboThang.SelectedItem + " năm " + cboNam.SelectedItem;
         }
 
         private void btnBaoCaoDoanhSo_Click(object sender, EventArgs e)
         {
-
+            loadBaoCaoDoanhSoBanHang();
         }
 
         private void dataGridViewX1_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -268,7 +324,7 @@ namespace BaiTapLonCShap
         private void btnSuaKhachHang2_Click(object sender, EventArgs e)
         {
             KhachHang x = new KhachHang();
-            x.MaKhachHang = dgvKhachHang.SelectedRows[0].Cells[2].Value + "";
+            x.MaKhachHang = dgvKhachHang.SelectedRows[0].Cells[0].Value + "";
             frmSuaKhachHang frmSua = new frmSuaKhachHang(x);
             // sau mỗi lần ấn     
             frmSua.tbnSua_Click += new EventHandler(NhanSuKienClick);
@@ -278,7 +334,7 @@ namespace BaiTapLonCShap
         private void btnXoaKhachHang2_Click(object sender, EventArgs e)
         {
             KhachHang x = new KhachHang();
-            x.MaKhachHang = dgvKhachHang.SelectedRows[0].Cells[2].Value + "";
+            x.MaKhachHang = dgvKhachHang.SelectedRows[0].Cells[0].Value + "";
             frmXoaKhachHang frmXoa = new frmXoaKhachHang(x);
             frmXoa.btnXoa_click += new EventHandler(NhanSuKienClick);
             frmXoa.ShowDialog();
@@ -321,6 +377,60 @@ namespace BaiTapLonCShap
                 kh.MaKhachHang = txtKhachHang.Text;
                 dgvKhachHang.DataSource = bulKH.layTatCaKhachHang(kh);
             }
+        }
+
+        private void txtMaNhanVien_TextChanged(object sender, EventArgs e)
+        {
+            BULNhanVien bulNV = new BULNhanVien();
+            foreach(NhanVien nv in bulNV.laytatCaNhanVien())
+            {
+                if (nv.MaNhanVien == txtMaNhanVien.Text)
+                {
+                    txtTenNhanVien.Text = nv.HoTen;
+                    btnBaoCaoDoanhSo.Enabled = true;
+                    break;
+                }
+                else
+                {
+                    txtTenNhanVien.Text = "";
+                    btnBaoCaoDoanhSo.Enabled = false;
+                }
+            }
+        }
+
+        private void frmMain_Activated(object sender, EventArgs e)
+        {
+            if (!isFormActive)
+            {
+                loadKhachHang();
+                isFormActive = false;
+            }
+        }
+
+        private void frmMain_MdiChildActivate(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void frmMain_AutoValidateChanged(object sender, EventArgs e)
+        {
+           
+            
+        }
+
+        private void frmMain_Validated(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void frmMain_Validating(object sender, CancelEventArgs e)
+        {
+            
+        }
+
+        private void frmMain_Deactivate(object sender, EventArgs e)
+        {
+            isFormActive=false;
         }
     }
 }

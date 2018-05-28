@@ -13,11 +13,20 @@ namespace DAL
         public static SqlConnection connect = new SqlConnection(ConfigurationManager.ConnectionStrings["dataPatch"] + "");
         public static void moKetNoi()
         {
-            connect.Open();
+            try
+            {
+                connect.Open();
+            }
+            catch(Exception ex){ }
         }
         public static void dongKetNoi()
         {
-            connect.Close();
+
+            try
+            {
+                connect.Close();
+            }
+            catch (Exception ex) { }
         }
     }
 }

@@ -82,7 +82,7 @@
             this.txtSoDienThoai.Multiline = true;
             this.txtSoDienThoai.Name = "txtSoDienThoai";
             this.txtSoDienThoai.Size = new System.Drawing.Size(175, 34);
-            this.txtSoDienThoai.TabIndex = 9;
+            this.txtSoDienThoai.TabIndex = 3;
             // 
             // txtDiaChi
             // 
@@ -98,7 +98,7 @@
             this.txtDiaChi.Multiline = true;
             this.txtDiaChi.Name = "txtDiaChi";
             this.txtDiaChi.Size = new System.Drawing.Size(175, 34);
-            this.txtDiaChi.TabIndex = 10;
+            this.txtDiaChi.TabIndex = 2;
             // 
             // txtTenKhachHang
             // 
@@ -114,7 +114,7 @@
             this.txtTenKhachHang.Multiline = true;
             this.txtTenKhachHang.Name = "txtTenKhachHang";
             this.txtTenKhachHang.Size = new System.Drawing.Size(175, 34);
-            this.txtTenKhachHang.TabIndex = 11;
+            this.txtTenKhachHang.TabIndex = 1;
             // 
             // txtMaKhachHang
             // 
@@ -130,7 +130,7 @@
             this.txtMaKhachHang.Multiline = true;
             this.txtMaKhachHang.Name = "txtMaKhachHang";
             this.txtMaKhachHang.Size = new System.Drawing.Size(175, 34);
-            this.txtMaKhachHang.TabIndex = 12;
+            this.txtMaKhachHang.TabIndex = 0;
             this.txtMaKhachHang.TextChanged += new System.EventHandler(this.txtMaKhachHang_TextChanged);
             // 
             // label4
@@ -174,7 +174,7 @@
             this.btnSuaKhachHang.Name = "btnSuaKhachHang";
             this.btnSuaKhachHang.Size = new System.Drawing.Size(149, 38);
             this.btnSuaKhachHang.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.btnSuaKhachHang.TabIndex = 8;
+            this.btnSuaKhachHang.TabIndex = 4;
             this.btnSuaKhachHang.Text = "Sửa khách hàng";
             this.btnSuaKhachHang.TextAlignment = DevComponents.DotNetBar.eButtonTextAlignment.Left;
             this.btnSuaKhachHang.Click += new System.EventHandler(this.btnSuaKhachHang_Click);

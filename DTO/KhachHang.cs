@@ -12,29 +12,17 @@ namespace DTO
         private string hoTen;
         private string diaChi;
         private string soDienThoai;
-        public KhachHang()
-        {
-           
-        }
 
-        public KhachHang(string maKhachHang, string hoTen, string diaChi, string soDienThoai)
-        {
-            this.MaKhachHang = maKhachHang;
-            this.HoTen = hoTen;
-            this.DiaChi = diaChi;
-            this.SoDienThoai = soDienThoai;
-        }
-
-        public string DiaChi
+        public string MaKhachHang
         {
             get
             {
-                return diaChi;
+                return maKhachHang;
             }
 
             set
             {
-                diaChi = value;
+                maKhachHang = value;
             }
         }
 
@@ -51,16 +39,16 @@ namespace DTO
             }
         }
 
-        public string MaKhachHang
+        public string DiaChi
         {
             get
             {
-                return maKhachHang;
+                return diaChi;
             }
 
             set
             {
-                maKhachHang = value;
+                diaChi = value;
             }
         }
 
@@ -76,6 +64,20 @@ namespace DTO
                 soDienThoai = value;
             }
         }
+
+        public KhachHang()
+        {
+           
+        }
+
+        public KhachHang(string maKhachHang, string hoTen, string diaChi, string soDienThoai)
+        {
+            this.MaKhachHang = maKhachHang;
+            this.HoTen = hoTen;
+            this.DiaChi = diaChi;
+            this.SoDienThoai = soDienThoai;
+        }
+        
         public override string ToString()
         {
             return base.ToString();

@@ -83,7 +83,7 @@
             this.txtSoDienThoai.Multiline = true;
             this.txtSoDienThoai.Name = "txtSoDienThoai";
             this.txtSoDienThoai.Size = new System.Drawing.Size(175, 34);
-            this.txtSoDienThoai.TabIndex = 9;
+            this.txtSoDienThoai.TabIndex = 3;
             this.txtSoDienThoai.TextChanged += new System.EventHandler(this.txtSoDienThoai_TextChanged);
             // 
             // txtDiaChi
@@ -100,7 +100,7 @@
             this.txtDiaChi.Multiline = true;
             this.txtDiaChi.Name = "txtDiaChi";
             this.txtDiaChi.Size = new System.Drawing.Size(175, 34);
-            this.txtDiaChi.TabIndex = 10;
+            this.txtDiaChi.TabIndex = 2;
             this.txtDiaChi.TextChanged += new System.EventHandler(this.txtDiaChi_TextChanged);
             // 
             // txtTenKhachHang
@@ -117,7 +117,7 @@
             this.txtTenKhachHang.Multiline = true;
             this.txtTenKhachHang.Name = "txtTenKhachHang";
             this.txtTenKhachHang.Size = new System.Drawing.Size(175, 34);
-            this.txtTenKhachHang.TabIndex = 11;
+            this.txtTenKhachHang.TabIndex = 1;
             this.txtTenKhachHang.TextChanged += new System.EventHandler(this.txtTenKhachHang_TextChanged);
             // 
             // txtMaKhachHang
@@ -135,7 +135,7 @@
             this.txtMaKhachHang.Multiline = true;
             this.txtMaKhachHang.Name = "txtMaKhachHang";
             this.txtMaKhachHang.Size = new System.Drawing.Size(175, 34);
-            this.txtMaKhachHang.TabIndex = 12;
+            this.txtMaKhachHang.TabIndex = 0;
             // 
             // label4
             // 
@@ -178,7 +178,7 @@
             this.btnThemKhachHang.Name = "btnThemKhachHang";
             this.btnThemKhachHang.Size = new System.Drawing.Size(149, 38);
             this.btnThemKhachHang.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.btnThemKhachHang.TabIndex = 8;
+            this.btnThemKhachHang.TabIndex = 4;
             this.btnThemKhachHang.Text = "Thêm khách hàng";
             this.btnThemKhachHang.TextAlignment = DevComponents.DotNetBar.eButtonTextAlignment.Left;
             this.btnThemKhachHang.Click += new System.EventHandler(this.btnThemKhachHang_Click);
