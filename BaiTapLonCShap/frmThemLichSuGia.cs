@@ -13,8 +13,7 @@ namespace BaiTapLonCShap
 {
     public partial class frmThemLichSuGia : Form
     {
-        
-        public event EventHandler btn_Click;
+       
         BULHang bulHang = new BULHang();
         BULLichSuGia bulLSG = new BULLichSuGia();
         public frmThemLichSuGia()
@@ -35,24 +34,19 @@ namespace BaiTapLonCShap
         {
             txtNgayBatDau.Text = dtNgayBatDau.Text ;
         }
-
+        private bool textBoxRong()
+        {
+            if (txtDonGia.Text == "" || txtNgayBatDau.Text == "" || txtNgayCapNhat.Text == "" || txtNgayKetThuc.Text == "")
+                return true;
+            return false;
+        }
         private void dtNgayKetThuc_TextChanged(object sender, EventArgs e)
         {
          
             txtNgayKetThuc.Text = dtNgayKetThuc.Text ;
         }
 
-        private void dtNgayKetThuc_Click(object sender, EventArgs e)
-        {
 
-        }
-
-        private void txtNgayCapNhat_TextChanged(object sender, EventArgs e)
-        {
-         
-        }
-
-    
 
         private void btnThem_Click(object sender, EventArgs e)
         {
@@ -65,8 +59,7 @@ namespace BaiTapLonCShap
 
 
                 bulLSG.add(lsg);
-                if (btn_Click != null)
-                    btn_Click(sender, e);
+               
                 MessageBox.Show("Thêm lịch sử giá thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 this.Close();
             }
@@ -78,6 +71,47 @@ namespace BaiTapLonCShap
 
             //MessageBox.Show(dtNgayBatDau.Value.ToString("MM/dd/yyyy"));
             
+        }
+
+        private void dtNgayBatDau_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtNgayBatDau_TextChanged(object sender, EventArgs e)
+        {
+            if(textBoxRong())
+            {
+                btnThem.Enabled = false;
+            }
+            else
+            {
+                btnThem.Enabled = true;
+            }
+        }
+
+        private void txtNgayKetThuc_TextChanged(object sender, EventArgs e)
+        {
+            if (textBoxRong())
+            {
+                btnThem.Enabled = false;
+            }
+            else
+            {
+                btnThem.Enabled = true;
+            }
+        }
+
+        private void txtDonGia_TextChanged(object sender, EventArgs e)
+        {
+            if (textBoxRong())
+            {
+                btnThem.Enabled = false;
+            }
+            else
+            {
+                btnThem.Enabled = true;
+            }
         }
     }
 }

@@ -14,7 +14,7 @@ namespace BaiTapLonCShap
     public partial class frmXoaKhachHang : Form
     {
         KhachHang x = new KhachHang();
-        public event EventHandler btnXoa_click;
+       
         BULKhachHang bulKH = new BULKhachHang();
         public frmXoaKhachHang()
         {
@@ -31,7 +31,7 @@ namespace BaiTapLonCShap
         {
             txtMaKhachHang.Text = x.MaKhachHang;
         }
-        private KhachHang kiemTraTonTai(string text)
+        private KhachHang tonTaiKhachHang(string text)
         {
             foreach (KhachHang x in bulKH.layTatCaKhachHang())
             {
@@ -45,9 +45,9 @@ namespace BaiTapLonCShap
 
         private void txtMaKhachHang_TextChanged(object sender, EventArgs e)
         {
-            if (kiemTraTonTai(txtMaKhachHang.Text) != null)
+            if (tonTaiKhachHang(txtMaKhachHang.Text) != null)
             {
-                KhachHang x = kiemTraTonTai(txtMaKhachHang.Text);
+                KhachHang x = tonTaiKhachHang(txtMaKhachHang.Text);
                 txtDiaChi.Text = x.DiaChi;
                 txtSoDienThoai.Text = x.SoDienThoai;
                 txtTenKhachHang.Text = x.HoTen;
@@ -72,10 +72,7 @@ namespace BaiTapLonCShap
             if(dl==DialogResult.Yes)
             {
                 bulKH.xoa(kh1);
-                if (btnXoa_click != null)
-                {
-                    btnXoa_click(sender, e);
-                }
+                
                 this.Close();
             }
 

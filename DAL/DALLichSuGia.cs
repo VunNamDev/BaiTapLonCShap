@@ -6,11 +6,13 @@ using System.Threading.Tasks;
 using System.Data.SqlClient;
 using System.Configuration;
 using DTO;
+using System.Data;
+
 namespace DAL
 {
     public class DALLichSuGia
     {
-        public List<LichSuGia> layLSG()
+        public List<LichSuGia> layTatCaLichSuGia()
         {
             List<LichSuGia> arr = new List<LichSuGia>();
             KetNoiCSDL.moKetNoi();
@@ -28,47 +30,36 @@ namespace DAL
             KetNoiCSDL.dongKetNoi();
             return arr;
         }
-        public List<LichSuGia> layLSGCoDieuKien(string  s)
+        public DataTable layTatCaLichSuGiaCoTenHang()
         {
             List<LichSuGia> arr = new List<LichSuGia>();
             KetNoiCSDL.moKetNoi();
-            string get = "select * from LichSuGia where maHang=@maHang ";
+            string get = "select Hang.maHang, tenHang, ngayBatDau, ngayKetThuc, LichSuGia.donGia, ngayCapNhat from LichSuGia inner join Hang on Hang.maHang = LichSuGia.maHang";
+            SqlCommand cmd = new SqlCommand(get, KetNoiCSDL.connect);
+            SqlDataReader dr = cmd.ExecuteReader();
 
+            DataTable tb = new DataTable();
+            tb.Load(dr);
+            KetNoiCSDL.dongKetNoi();
+            return tb;
+        }
+
+
+        public DataTable layTatCaLichSuGiaCoTenHang(string s)
+        {
+            List<LichSuGia> arr = new List<LichSuGia>();
+            KetNoiCSDL.moKetNoi();
+            string get = "select Hang.maHang, tenHang, ngayBatDau, ngayKetThuc donGian, ngayCapNhat from LichSuGia inner join Hang on Hang.maHang = LichSuGia.maHang  where Hang.maHang=@maHang ";
             SqlCommand cmd = new SqlCommand(get, KetNoiCSDL.connect);
             cmd.Parameters.AddWithValue("maHang", s);
             SqlDataReader dr = cmd.ExecuteReader();
 
-            while (dr.Read())
-            {
-
-                LichSuGia x = new LichSuGia(dr["maHang"] + "", ((DateTime)dr["ngayBatDau"]).ToString("dd/MM/yyyy"), ((DateTime)dr["ngayKetThuc"]).ToString("dd/MM/yyyy"),
-                    float.Parse(dr["donGia"] + ""), ((DateTime)dr["ngayCapNhat"]).ToString("dd/MM/yyyy"));
-                arr.Add(x);
-            }
+            DataTable tb = new DataTable();
+            tb.Load(dr);
             KetNoiCSDL.dongKetNoi();
-            return arr;
+            return tb;
         }
 
-        public LichSuGia KiemTraTonTai(LichSuGia ls)
-        {
-            LichSuGia x = new LichSuGia();
-            KetNoiCSDL.moKetNoi();
-            string get = "select * from LichSuGia where maHang=@maHang and ngayBatDau=@ngayBatDau ";
-            SqlCommand cmd = new SqlCommand(get, KetNoiCSDL.connect);
-            cmd.Parameters.AddWithValue("maHang", ls.MaHang);
-            cmd.Parameters.AddWithValue("ngayBatDau", ls.NgayBatDau);
-            SqlDataReader dr = cmd.ExecuteReader();
-
-            while (dr.Read())
-            {
-
-                x = new LichSuGia(dr["maHang"] + "", ((DateTime)dr["ngayBatDau"]).ToString("dd/MM/yyyy"), ((DateTime)dr["ngayKetThuc"]).ToString("dd/MM/yyyy"),
-                    float.Parse(dr["donGia"] + ""), ((DateTime)dr["ngayCapNhat"]).ToString("dd/MM/yyyy"));
-                
-            }
-            KetNoiCSDL.dongKetNoi();
-            return x;
-        }
         public void themLichSuGia(LichSuGia ls)
         {
             

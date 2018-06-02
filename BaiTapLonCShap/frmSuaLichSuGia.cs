@@ -36,25 +36,22 @@ namespace BaiTapLonCShap
 
         private void btnSua_Click(object sender, EventArgs e)
         {
-            float f = -1;
-            float.TryParse(txtDonGia.Text,out f);
-            if(f<0||f.ToString().Length!= txtDonGia.Text.Length)
-            {
-                MessageBox.Show("đơn giá chỉ nhập số và số dương");
-                txtDonGia.Text = "";
-            }
-            else
+            try
             {
                 LichSuGia ls = new LichSuGia(cboMaHang.SelectedValue + "", dtNgayBatDau.Value.ToString("MM/dd/yyyy"),
                 dtNgayKetThuc.Value.ToString("MM/dd/yyyy"), float.Parse(txtDonGia.Text),
                 DateTime.Now.ToString("MM/dd/yyyy"));
 
-                
+
                 bulLSG.update(ls);
                 if (btn_click != null)
                     btn_click(sender, e);
                 MessageBox.Show("Sửa lịch sử giá thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 this.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Sửa thất bại");
             }
         }
 
@@ -69,15 +66,9 @@ namespace BaiTapLonCShap
                 txtNgayBatDau.Text = lichSu.NgayBatDau;
                 cboMaHang.SelectedValue = lichSu.MaHang;
                 txtNgayBatDau.Text = lichSu.NgayBatDau;
-                dtNgayBatDau.Value = DateTime.ParseExact(txtNgayBatDau.Text,
-                                   "dd/MM/yyyy",
-                                   CultureInfo.InvariantCulture);
-                dtNgayKetThuc.Value = DateTime.ParseExact(txtNgayKetThuc.Text,
-                                   "dd/MM/yyyy",
-                                   CultureInfo.InvariantCulture);
-                
+                dtNgayBatDau.Text= txtNgayBatDau.Text;
+                dtNgayKetThuc.Text = txtNgayKetThuc.Text;
             }
-
             arrLSG = bulLSG.layTatCaLichSuGia();
 
             

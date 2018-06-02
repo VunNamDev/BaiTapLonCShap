@@ -14,8 +14,7 @@ namespace BaiTapLonCShap
    
     public partial class frmSuaKhachHang : Form
     {
-        public event EventHandler tbnSua_Click;
-        BULKhachHang kh = new BULKhachHang();
+        BULKhachHang bulKH = new BULKhachHang();
         KhachHang k = new KhachHang();
      
         public frmSuaKhachHang()
@@ -32,9 +31,9 @@ namespace BaiTapLonCShap
         private void txtMaKhachHang_TextChanged(object sender, EventArgs e)
         {
             
-            if (kiemTraTonTai(txtMaKhachHang.Text)!=null)
+            if (tonTaiKhachHang(txtMaKhachHang.Text)!=null)
             {
-                KhachHang x = kiemTraTonTai(txtMaKhachHang.Text);
+                KhachHang x = tonTaiKhachHang(txtMaKhachHang.Text);
                 txtDiaChi.Text = x.DiaChi;
                 txtSoDienThoai.Text = x.SoDienThoai;
                 txtTenKhachHang.Text = x.HoTen;
@@ -50,9 +49,9 @@ namespace BaiTapLonCShap
             }
 
         }
-        private KhachHang kiemTraTonTai(string text)
+        private KhachHang tonTaiKhachHang(string text)
         {
-            foreach (KhachHang x in kh.layTatCaKhachHang())
+            foreach (KhachHang x in bulKH.layTatCaKhachHang())
             {
                 if (x.MaKhachHang == text)
                 {
@@ -70,11 +69,42 @@ namespace BaiTapLonCShap
         private void btnSuaKhachHang_Click(object sender, EventArgs e)
         {
             KhachHang k = new KhachHang(txtMaKhachHang.Text, txtTenKhachHang.Text, txtDiaChi.Text, txtSoDienThoai.Text);
-            kh.sua(k);
+            bulKH.sua(k);
             MessageBox.Show("Đã sửa thành công","Thông báo", MessageBoxButtons.OK);
-            if (tbnSua_Click!=null)
-                tbnSua_Click(sender, e);
+           
             this.Close();
+        }
+
+        private void txtTenKhachHang_TextChanged(object sender, EventArgs e)
+        {
+            trangThaiBtnSua();
+        }
+
+        private void txtDiaChi_TextChanged(object sender, EventArgs e)
+        {
+            trangThaiBtnSua();
+        }
+
+        private void txtSoDienThoai_TextChanged(object sender, EventArgs e)
+        {
+            trangThaiBtnSua();
+        }
+        private bool rong(TextBox x)
+        {
+            if (x.Text == "")
+                return true;
+            return false;
+        }
+        void trangThaiBtnSua()
+        {
+            if (rong(txtDiaChi) || rong(txtSoDienThoai) || rong(txtTenKhachHang))
+            {
+                btnSuaKhachHang.Enabled = false;
+            }
+            if (!rong(txtDiaChi) && !rong(txtSoDienThoai) && !rong(txtTenKhachHang))
+            {
+                btnSuaKhachHang.Enabled = true;
+            }
         }
     }
 }

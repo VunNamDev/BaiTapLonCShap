@@ -17,10 +17,10 @@ namespace BaiTapLonCShap
     {
         BULLichSuGia bulLSG = new BULLichSuGia();
         BULHang bulHang = new BULHang();
+
         List<LichSuGia> arrLSG = new List<LichSuGia>();
         LichSuGia lichSu = new LichSuGia();
 
-        public event EventHandler btn_click;
         public frmXoaLichSuGia()
         {
             InitializeComponent();
@@ -44,9 +44,7 @@ namespace BaiTapLonCShap
             {
                 cboMaHang.SelectedValue = lichSu.MaHang;
                 txtNgayBatDau.Text = lichSu.NgayBatDau;
-                dtNgayBatDau.Value = DateTime.ParseExact(txtNgayBatDau.Text,
-                                   "dd/MM/yyyy",
-                                   CultureInfo.InvariantCulture);
+                dtNgayBatDau.Text = txtNgayBatDau.Text;
 
             }
             
@@ -66,13 +64,13 @@ namespace BaiTapLonCShap
                     txtNgayKetThuc.Text = ls.NgayKetThuc;
                     txtDonGia.Text = ls.DonGia + "";
                     txtNgayCapNhat.Text = ls.NgayCapNhat;
-                    btnSua.Enabled = true;
+                    btnXoa.Enabled = true;
                     break;
                 }
 
                 else
                 {
-                    btnSua.Enabled = false;
+                    btnXoa.Enabled = false;
                     txtNgayKetThuc.Text = "";
                     txtDonGia.Text = "";
                     txtNgayCapNhat.Text = "";
@@ -91,37 +89,26 @@ namespace BaiTapLonCShap
            
         }
 
-        private void btnSua_Click(object sender, EventArgs e)
-        {
-            float f = -1;
-            float.TryParse(txtDonGia.Text, out f);
-            if (f < 0 || f.ToString().Length != txtDonGia.Text.Length)
-            {
-                MessageBox.Show("đơn giá chỉ nhập số và số dương");
-                txtDonGia.Text = "";
-            }
-            else
-            {
-                LichSuGia ls = new LichSuGia(cboMaHang.SelectedValue + "", dtNgayBatDau.Value.ToString("MM/dd/yyyy"),
-                dtNgayKetThuc.Value.ToString("MM/dd/yyyy"), float.Parse(txtDonGia.Text),
-                DateTime.Now.ToString("MM/dd/yyyy"));
-
-                MessageBox.Show(cboMaHang.SelectedValue + " - " + dtNgayBatDau.Value.ToString("MM/dd/yyyy"));
-                DialogResult dl = MessageBox.Show("Xoá lịch sử giá", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-                if(dl == DialogResult.Yes)
-                {
-                    bulLSG.Xoa(ls);
-                    if (btn_click != null)
-                        btn_click(sender, e);
-                    this.Close();
-                }
-                
-             }
-        }
 
         private void dtNgayBatDau_TextChanged(object sender, EventArgs e)
         {
             txtNgayBatDau.Text = dtNgayBatDau.Text;
+        }
+
+        private void btnXoa_Click(object sender, EventArgs e)
+        {
+            LichSuGia ls = new LichSuGia(cboMaHang.SelectedValue + "", dtNgayBatDau.Value.ToString("MM/dd/yyyy"),
+           dtNgayKetThuc.Value.ToString("MM/dd/yyyy"), float.Parse(txtDonGia.Text),
+           DateTime.Now.ToString("MM/dd/yyyy"));
+
+
+            DialogResult dl = MessageBox.Show("Xoá lịch sử giá", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (dl == DialogResult.Yes)
+            {
+                bulLSG.Xoa(ls);
+
+                this.Close();
+            }
         }
     }
 }

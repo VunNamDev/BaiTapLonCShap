@@ -159,7 +159,7 @@
             this.dtNgayBatDau.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtNgayBatDau.Format = DevComponents.Editors.eDateTimePickerFormat.Custom;
             this.dtNgayBatDau.IsPopupCalendarOpen = false;
-            this.dtNgayBatDau.Location = new System.Drawing.Point(358, 78);
+            this.dtNgayBatDau.Location = new System.Drawing.Point(357, 78);
             // 
             // 
             // 

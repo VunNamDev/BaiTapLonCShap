@@ -16,3 +16,12 @@ C:\Users\Dell ALL\Music\BaiTapLonCShap\BUL\bin\Debug\DTO.pdb
 C:\Users\Dell ALL\Music\BaiTapLonCShap\BUL\obj\Debug\BUL.dll
 C:\Users\Dell ALL\Music\BaiTapLonCShap\BUL\obj\Debug\BUL.pdb
 C:\Users\Dell ALL\Music\BaiTapLonCShap\BUL\obj\Debug\BUL.csprojResolveAssemblyReference.cache
+C:\Users\Dell ALL\Pictures\BaiTapLonCShap\BaiTapLonCShap\BUL\obj\Debug\BUL.csprojResolveAssemblyReference.cache
+C:\Users\Dell ALL\Pictures\BaiTapLonCShap\BaiTapLonCShap\BUL\obj\Debug\BUL.dll
+C:\Users\Dell ALL\Pictures\BaiTapLonCShap\BaiTapLonCShap\BUL\obj\Debug\BUL.pdb
+C:\Users\Dell ALL\Pictures\BaiTapLonCShap\BaiTapLonCShap\BUL\bin\Debug\BUL.dll
+C:\Users\Dell ALL\Pictures\BaiTapLonCShap\BaiTapLonCShap\BUL\bin\Debug\BUL.pdb
+C:\Users\Dell ALL\Pictures\BaiTapLonCShap\BaiTapLonCShap\BUL\bin\Debug\DAL.dll
+C:\Users\Dell ALL\Pictures\BaiTapLonCShap\BaiTapLonCShap\BUL\bin\Debug\DTO.dll
+C:\Users\Dell ALL\Pictures\BaiTapLonCShap\BaiTapLonCShap\BUL\bin\Debug\DAL.pdb
+C:\Users\Dell ALL\Pictures\BaiTapLonCShap\BaiTapLonCShap\BUL\bin\Debug\DTO.pdb

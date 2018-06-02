@@ -5,6 +5,8 @@ using System.Text;
 using System.Threading.Tasks;
 using DAL;
 using DTO;
+using System.Data;
+
 namespace BUL
 {
     public class BULLichSuGia
@@ -12,19 +14,19 @@ namespace BUL
         
         DALLichSuGia LSG = new DALLichSuGia();
 
-
+        public DataTable layTatCaLichSuGiaCoTenHang()
+        {
+            return LSG.layTatCaLichSuGiaCoTenHang();
+        }
         public List<LichSuGia> layTatCaLichSuGia()
         {
-            return LSG.layLSG();
+            return LSG.layTatCaLichSuGia();
         }
-        public List<LichSuGia> layTatCaLichSuGiaCoDieuKien(LichSuGia lsg)
+        public DataTable layTatCaLichSuGiaCoTenHang(string s)
         {
-            return LSG.layLSGCoDieuKien(lsg.MaHang);
+            return LSG.layTatCaLichSuGiaCoTenHang(s);
         }
-        public LichSuGia lsgTonTai(LichSuGia lsg)
-        {
-            return LSG.KiemTraTonTai(lsg);
-        }
+       
         public void add(LichSuGia lsg)
         {   
             LSG.themLichSuGia(lsg);

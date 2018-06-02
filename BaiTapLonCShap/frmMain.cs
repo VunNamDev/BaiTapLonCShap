@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using DTO;
 using BUL;
+using Microsoft.Reporting.WinForms;
 
 namespace BaiTapLonCShap
 {
@@ -68,12 +69,34 @@ namespace BaiTapLonCShap
 
         private void frmMain_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'QLBHDataSet.v1' table. You can move, or remove it, as needed.
+            this.v1TableAdapter.Fill(this.QLBHDataSet.v1,1,1997);
             loadManHinhBaoCaoDoanhSo();
             //loadNhanVien();
             loadBaoCaoDoanhSoBanHang();
+            this.reportViewer1.RefreshReport();
+            addParamBaoCaoDoanhSo();
+            
         }
 
+        public void addParamBaoCaoDoanhSo()
+        {
+            ReportParameter[] arrRP = new ReportParameter[5];
+            arrRP[0] = new ReportParameter("thang");
+            arrRP[1] = new ReportParameter("nam");
+            arrRP[2] = new ReportParameter("tenNhanVien");
+            arrRP[3] = new ReportParameter("maNhanVien");
+            arrRP[4] = new ReportParameter("donVi");
 
+            arrRP[0].Values.Add(cboThang.SelectedItem + "");
+            arrRP[1].Values.Add(cboNam.SelectedItem + "");
+            arrRP[2].Values.Add(txtTenNhanVien.Text);
+            arrRP[3].Values.Add(txtMaNhanVien.Text);
+            arrRP[4].Values.Add(cboDonVi.SelectedItem +"");
+
+            this.reportViewer1.LocalReport.SetParameters(arrRP);
+            this.reportViewer1.RefreshReport();
+        }
         public void loadManHinhBaoCaoDoanhSo()
         {
             
@@ -93,25 +116,16 @@ namespace BaiTapLonCShap
             }
             cboNam.DataSource = arrNam;
             txtNgayLap.Text = DateTime.Now.ToString("dd/MM/yyyy");
+
+            List<string> arrDonVi = new List<string>();
+            arrDonVi.Add("Kim Bảo 1");
+            arrDonVi.Add("Kim Bảo 2");
+            arrDonVi.Add("Kim Bảo 3");
+            cboDonVi.DataSource = arrDonVi;
         }
         public void loadBaoCaoDoanhSoBanHang() {
-            BULHang bulH = new BULHang();
-            List<DoanhSoTheoNgay> arrDoanhSo = bulH.layBaoCao(cboThang.Text, cboNam.Text);
-            dgvDoanhSo.DataSource = arrDoanhSo;
-
-            dgvDoanhSo.Columns["stt"].HeaderText = "Số thứ tự";
-            dgvDoanhSo.Columns["ngayLap"].HeaderText = "Ngày lập";
-            dgvDoanhSo.Columns["tongTien"].HeaderText = "Doanh thu";
-            List<DoanhSoTheoNgay> arr = new List<DoanhSoTheoNgay>();
-            DoanhSoTheoNgay ngay = new DoanhSoTheoNgay();
-            ngay.TongTien = 0;
-            ngay.Stt = "Tổng tiền";
-            foreach (DoanhSoTheoNgay ds in arrDoanhSo)
-            {
-                ngay.TongTien += ds.TongTien;
-            }
-            arr.Add(ngay);
-            dgvTongGia.DataSource = arr;
+            
+          
         }
         public void loadNhanVien()
         {
@@ -146,10 +160,22 @@ namespace BaiTapLonCShap
         {
 
             BULLichSuGia bulLSG = new BULLichSuGia();
-            dgvLichSuGia.DataSource = bulLSG.layTatCaLichSuGia();
+            
+            
+            dgvLichSuGia.DataSource = bulLSG.layTatCaLichSuGiaCoTenHang();
+            dgvLichSuGia.Columns[0].HeaderText = "Mã hàng";
+            dgvLichSuGia.Columns[1].HeaderText = "Tên hàng";
         }
-        
 
+        void reloadDGV()
+        {
+            loadNhanVien();
+            loadNhaCungCap();
+            loadHang();
+            loadLoaiHang();
+            loadKhachHang();
+            loadLichSuGia();
+        }
         private void loadTab(TabItem tabName)
         {
 
@@ -205,14 +231,13 @@ namespace BaiTapLonCShap
         private void btnThemKhachHang_Click(object sender, EventArgs e)
         {
             frmThemKhachHang frmKH = new frmThemKhachHang();
-            //frmKH.btnThem += new EventHandler(NhanSuKienClick); 
             frmKH.ShowDialog();
         }
         
         private void btnThemLichSuGia_Click(object sender, EventArgs e)
         {
             frmThemLichSuGia themlsg = new frmThemLichSuGia();
-           // themlsg.btn_Click += new EventHandler(NhanSuKienClick);
+          
             themlsg.ShowDialog();
         }
         void NhanSuKienClick(object sender, EventArgs e)
@@ -227,8 +252,7 @@ namespace BaiTapLonCShap
         private void btnSuaKhachHang_Click(object sender, EventArgs e)
         {
             frmSuaKhachHang frmSua = new frmSuaKhachHang();     
-            // sau mỗi lần ấn     
-            frmSua.tbnSua_Click += new EventHandler(NhanSuKienClick);
+           
             frmSua.ShowDialog();
         }
         private void btnSuaKhachHangContexMenu_Click(object sender, EventArgs e)
@@ -239,7 +263,7 @@ namespace BaiTapLonCShap
         private void btnXoaKhachHang_Click(object sender, EventArgs e)
         {
             frmXoaKhachHang frmXoa = new frmXoaKhachHang();
-            frmXoa.btnXoa_click += new EventHandler(NhanSuKienClick);
+           
             frmXoa.ShowDialog();
             
         }
@@ -259,16 +283,14 @@ namespace BaiTapLonCShap
             else
             {
                 BULLichSuGia lsg = new BULLichSuGia();
-                LichSuGia ls = new LichSuGia();
-                ls.MaHang= txtLSG.Text;
-                dgvLichSuGia.DataSource = lsg.layTatCaLichSuGiaCoDieuKien(ls);
+                dgvLichSuGia.DataSource = lsg.layTatCaLichSuGiaCoTenHang(txtLSG.Text);
             }
         }
 
         private void btnSuaLichSuGia_Click(object sender, EventArgs e)
         {
             frmSuaLichSuGia suaLSG = new frmSuaLichSuGia();
-            suaLSG.btn_click += new EventHandler(NhanSuKienClick);
+            
             suaLSG.ShowDialog();
         }
 
@@ -284,7 +306,7 @@ namespace BaiTapLonCShap
         private void btnXoaLichSuGia_Click(object sender, EventArgs e)
         {
             frmXoaLichSuGia xoaLSG = new frmXoaLichSuGia();
-            xoaLSG.btn_click += new EventHandler(NhanSuKienClick);
+            
             xoaLSG.ShowDialog();
         }
         private void btnXoaLichSuGiaContextMenu_Click(object sender, EventArgs e)
@@ -298,16 +320,20 @@ namespace BaiTapLonCShap
 
         private void cboThang_SelectedIndexChanged(object sender, EventArgs e)
         {
-            lblTieuDe.Text = "Báo cáo doanh số tháng "+cboThang.SelectedItem + " năm "+cboNam.SelectedItem;
+           
         }
 
         private void cboNam_SelectedIndexChanged(object sender, EventArgs e)
         {
-            lblTieuDe.Text = "Báo cáo doanh số tháng " + cboThang.SelectedItem + " năm " + cboNam.SelectedItem;
+           
         }
 
         private void btnBaoCaoDoanhSo_Click(object sender, EventArgs e)
         {
+            this.v1TableAdapter.Fill(this.QLBHDataSet.v1,
+                System.Int32.Parse(cboThang.SelectedItem.ToString()),
+                System.Int32.Parse(cboNam.SelectedItem.ToString()));
+            addParamBaoCaoDoanhSo();
             loadBaoCaoDoanhSoBanHang();
         }
 
@@ -327,7 +353,7 @@ namespace BaiTapLonCShap
             x.MaKhachHang = dgvKhachHang.SelectedRows[0].Cells[0].Value + "";
             frmSuaKhachHang frmSua = new frmSuaKhachHang(x);
             // sau mỗi lần ấn     
-            frmSua.tbnSua_Click += new EventHandler(NhanSuKienClick);
+           
             frmSua.ShowDialog();
         }
 
@@ -336,7 +362,7 @@ namespace BaiTapLonCShap
             KhachHang x = new KhachHang();
             x.MaKhachHang = dgvKhachHang.SelectedRows[0].Cells[0].Value + "";
             frmXoaKhachHang frmXoa = new frmXoaKhachHang(x);
-            frmXoa.btnXoa_click += new EventHandler(NhanSuKienClick);
+           
             frmXoa.ShowDialog();
         }
 
@@ -347,7 +373,7 @@ namespace BaiTapLonCShap
             lsg.MaHang = dgvLichSuGia.SelectedRows[0].Cells["maHang"].Value + "";
             lsg.NgayBatDau = dgvLichSuGia.SelectedRows[0].Cells["ngayBatDau"].Value + "";
             frmSuaLichSuGia suaLSG = new frmSuaLichSuGia(lsg);
-            suaLSG.btn_click += new EventHandler(NhanSuKienClick);
+          
             suaLSG.ShowDialog();
         }
 
@@ -359,7 +385,7 @@ namespace BaiTapLonCShap
             lsg.NgayBatDau = dgvLichSuGia.SelectedRows[0].Cells["ngayBatDau"].Value + "";
 
             frmXoaLichSuGia xoaLSG = new frmXoaLichSuGia(lsg);
-            xoaLSG.btn_click += new EventHandler(NhanSuKienClick);
+          
             xoaLSG.ShowDialog();
         }
 
@@ -373,9 +399,7 @@ namespace BaiTapLonCShap
             }
             else
             {        
-                KhachHang kh = new KhachHang();
-                kh.MaKhachHang = txtKhachHang.Text;
-                dgvKhachHang.DataSource = bulKH.layTatCaKhachHang(kh);
+                dgvKhachHang.DataSource = bulKH.layTatCaKhachHang(txtKhachHang.Text);
             }
         }
 
@@ -402,7 +426,7 @@ namespace BaiTapLonCShap
         {
             if (!isFormActive)
             {
-                loadKhachHang();
+                reloadDGV();
                 isFormActive = false;
             }
         }

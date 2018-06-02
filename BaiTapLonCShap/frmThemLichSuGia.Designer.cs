@@ -138,7 +138,6 @@
             this.dtNgayKetThuc.TabStop = false;
             this.dtNgayKetThuc.Value = new System.DateTime(2018, 5, 22, 14, 13, 29, 0);
             this.dtNgayKetThuc.TextChanged += new System.EventHandler(this.dtNgayKetThuc_TextChanged);
-            this.dtNgayKetThuc.Click += new System.EventHandler(this.dtNgayKetThuc_Click);
             // 
             // dtNgayBatDau
             // 
@@ -200,6 +199,7 @@
             this.dtNgayBatDau.TabStop = false;
             this.dtNgayBatDau.Value = new System.DateTime(2018, 5, 22, 14, 13, 29, 0);
             this.dtNgayBatDau.TextChanged += new System.EventHandler(this.dtNgayBatDau_TextChanged);
+            this.dtNgayBatDau.Click += new System.EventHandler(this.dtNgayBatDau_Click);
             // 
             // cboMaHang
             // 
@@ -230,6 +230,7 @@
             this.txtNgayKetThuc.Name = "txtNgayKetThuc";
             this.txtNgayKetThuc.Size = new System.Drawing.Size(175, 34);
             this.txtNgayKetThuc.TabIndex = 2;
+            this.txtNgayKetThuc.TextChanged += new System.EventHandler(this.txtNgayKetThuc_TextChanged);
             // 
             // txtNgayCapNhat
             // 
@@ -247,7 +248,6 @@
             this.txtNgayCapNhat.Name = "txtNgayCapNhat";
             this.txtNgayCapNhat.Size = new System.Drawing.Size(175, 34);
             this.txtNgayCapNhat.TabIndex = 4;
-            this.txtNgayCapNhat.TextChanged += new System.EventHandler(this.txtNgayCapNhat_TextChanged);
             // 
             // txtNgayBatDau
             // 
@@ -265,6 +265,7 @@
             this.txtNgayBatDau.Name = "txtNgayBatDau";
             this.txtNgayBatDau.Size = new System.Drawing.Size(175, 34);
             this.txtNgayBatDau.TabIndex = 5;
+            this.txtNgayBatDau.TextChanged += new System.EventHandler(this.txtNgayBatDau_TextChanged);
             // 
             // txtDonGia
             // 
@@ -281,6 +282,7 @@
             this.txtDonGia.Name = "txtDonGia";
             this.txtDonGia.Size = new System.Drawing.Size(175, 34);
             this.txtDonGia.TabIndex = 3;
+            this.txtDonGia.TextChanged += new System.EventHandler(this.txtDonGia_TextChanged);
             // 
             // label5
             // 
@@ -326,6 +328,7 @@
             // 
             this.btnThem.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.btnThem.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.btnThem.Enabled = false;
             this.btnThem.Image = ((System.Drawing.Image)(resources.GetObject("btnThem.Image")));
             this.btnThem.Location = new System.Drawing.Point(201, 264);
             this.btnThem.Margin = new System.Windows.Forms.Padding(4);

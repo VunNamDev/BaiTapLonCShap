@@ -12,11 +12,11 @@ namespace DAL
 {
     public class DALKhachHang
     {
-        public List<KhachHang> layKH()
+        public List<KhachHang> layTatCaKhachHang()
         {
             List<KhachHang> arr = new List<KhachHang>();
             KetNoiCSDL.moKetNoi();
-            string get = "select maKhachHang,hoTen,diaChi,soDienThoai from KhachHang";
+            string get = "select * from KhachHang";
             SqlCommand cmd = new SqlCommand(get, KetNoiCSDL.connect);
             DataTable tb = new DataTable();
             SqlDataAdapter adt = new SqlDataAdapter();
@@ -31,13 +31,13 @@ namespace DAL
             KetNoiCSDL.dongKetNoi();
             return arr;
         }
-        public List<KhachHang> layKH(KhachHang kh)
+        public List<KhachHang> layTatCaKhachHang(string s)
         {
             List<KhachHang> arr = new List<KhachHang>();
             KetNoiCSDL.moKetNoi();
             string get = "select * from KhachHang where maKhachHang = @maKhachHang";
             SqlCommand cmd = new SqlCommand(get, KetNoiCSDL.connect);
-            cmd.Parameters.AddWithValue("maKhachHang", kh.MaKhachHang);
+            cmd.Parameters.AddWithValue("maKhachHang", s);
 
             SqlDataReader dr = cmd.ExecuteReader();
 

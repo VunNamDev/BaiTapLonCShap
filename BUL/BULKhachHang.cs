@@ -13,11 +13,11 @@ namespace BUL
 
         public List<KhachHang> layTatCaKhachHang()
         {
-            return dalKH.layKH();
+            return dalKH.layTatCaKhachHang();
         }
-        public List<KhachHang> layTatCaKhachHang(KhachHang kh )
+        public List<KhachHang> layTatCaKhachHang(string s )
         {
-            return dalKH.layKH(kh);
+            return dalKH.layTatCaKhachHang(s);
         }
         public void sua(KhachHang kh)
         {
