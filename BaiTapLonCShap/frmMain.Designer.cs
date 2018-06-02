@@ -145,10 +145,12 @@
             this.txtNgayLap = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.btnBaoCaoDoanhSo = new DevComponents.DotNetBar.ButtonX();
             this.label14 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
+            this.cboDonVi = new DevComponents.DotNetBar.Controls.ComboBoxEx();
             this.cboNam = new DevComponents.DotNetBar.Controls.ComboBoxEx();
             this.cboThang = new DevComponents.DotNetBar.Controls.ComboBoxEx();
             this.tabDoanhSo = new DevComponents.DotNetBar.TabItem(this.components);
@@ -219,8 +221,6 @@
             this.txtLSG = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.tabLichSuGia = new DevComponents.DotNetBar.TabItem(this.components);
             this.v1TableAdapter = new BaiTapLonCShap.QLBHDataSetTableAdapters.v1TableAdapter();
-            this.cboDonVi = new DevComponents.DotNetBar.Controls.ComboBoxEx();
-            this.label18 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.v1BindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.QLBHDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.superTabControl1)).BeginInit();
@@ -324,9 +324,9 @@
             this.superTabControl1.ControlBox.SubItems.AddRange(new DevComponents.DotNetBar.BaseItem[] {
             this.superTabControl1.ControlBox.MenuBox,
             this.superTabControl1.ControlBox.CloseBox});
-            this.superTabControl1.Controls.Add(this.superTabControlPanel4);
-            this.superTabControl1.Controls.Add(this.superTabControlPanel1);
             this.superTabControl1.Controls.Add(this.superTabControlPanel2);
+            this.superTabControl1.Controls.Add(this.superTabControlPanel1);
+            this.superTabControl1.Controls.Add(this.superTabControlPanel4);
             this.superTabControl1.Controls.Add(this.superTabControlPanel3);
             this.superTabControl1.Dock = System.Windows.Forms.DockStyle.Top;
             this.superTabControl1.Location = new System.Drawing.Point(0, 0);
@@ -334,7 +334,7 @@
             this.superTabControl1.ReorderTabsEnabled = true;
             this.superTabControl1.SelectedTabFont = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
             this.superTabControl1.SelectedTabIndex = 1;
-            this.superTabControl1.Size = new System.Drawing.Size(934, 145);
+            this.superTabControl1.Size = new System.Drawing.Size(934, 169);
             this.superTabControl1.TabFont = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.superTabControl1.TabIndex = 0;
             this.superTabControl1.Tabs.AddRange(new DevComponents.DotNetBar.BaseItem[] {
@@ -348,9 +348,9 @@
             // 
             this.superTabControlPanel4.Controls.Add(this.panelEx20);
             this.superTabControlPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.superTabControlPanel4.Location = new System.Drawing.Point(0, 25);
+            this.superTabControlPanel4.Location = new System.Drawing.Point(0, 0);
             this.superTabControlPanel4.Name = "superTabControlPanel4";
-            this.superTabControlPanel4.Size = new System.Drawing.Size(934, 120);
+            this.superTabControlPanel4.Size = new System.Drawing.Size(934, 169);
             this.superTabControlPanel4.TabIndex = 0;
             this.superTabControlPanel4.TabItem = this.superTabItem4;
             // 
@@ -364,7 +364,7 @@
             this.panelEx20.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelEx20.Location = new System.Drawing.Point(0, 0);
             this.panelEx20.Name = "panelEx20";
-            this.panelEx20.Size = new System.Drawing.Size(934, 120);
+            this.panelEx20.Size = new System.Drawing.Size(934, 169);
             this.panelEx20.Style.Alignment = System.Drawing.StringAlignment.Center;
             this.panelEx20.Style.BackColor1.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground;
             this.panelEx20.Style.BackColor2.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground2;
@@ -445,9 +445,9 @@
             this.superTabControlPanel2.Controls.Add(this.panelEx6);
             this.superTabControlPanel2.Controls.Add(this.panelEx1);
             this.superTabControlPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.superTabControlPanel2.Location = new System.Drawing.Point(0, 0);
+            this.superTabControlPanel2.Location = new System.Drawing.Point(0, 25);
             this.superTabControlPanel2.Name = "superTabControlPanel2";
-            this.superTabControlPanel2.Size = new System.Drawing.Size(934, 145);
+            this.superTabControlPanel2.Size = new System.Drawing.Size(934, 144);
             this.superTabControlPanel2.TabIndex = 0;
             this.superTabControlPanel2.TabItem = this.superTabItem2;
             // 
@@ -460,7 +460,7 @@
             this.panelEx12.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelEx12.Location = new System.Drawing.Point(620, 0);
             this.panelEx12.Name = "panelEx12";
-            this.panelEx12.Size = new System.Drawing.Size(310, 145);
+            this.panelEx12.Size = new System.Drawing.Size(310, 144);
             this.panelEx12.Style.Alignment = System.Drawing.StringAlignment.Center;
             this.panelEx12.Style.BackColor1.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground;
             this.panelEx12.Style.BackColor2.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground2;
@@ -478,7 +478,7 @@
             this.panelEx14.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelEx14.Location = new System.Drawing.Point(100, 0);
             this.panelEx14.Name = "panelEx14";
-            this.panelEx14.Size = new System.Drawing.Size(210, 145);
+            this.panelEx14.Size = new System.Drawing.Size(210, 144);
             this.panelEx14.Style.Alignment = System.Drawing.StringAlignment.Center;
             this.panelEx14.Style.BackColor1.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground;
             this.panelEx14.Style.BackColor2.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground2;
@@ -505,8 +505,8 @@
             this.tabUC3.ControlBox.SubItems.AddRange(new DevComponents.DotNetBar.BaseItem[] {
             this.tabUC3.ControlBox.MenuBox,
             this.tabUC3.ControlBox.CloseBox});
-            this.tabUC3.Controls.Add(this.superTabControlPanel7);
             this.tabUC3.Controls.Add(this.superTabControlPanel8);
+            this.tabUC3.Controls.Add(this.superTabControlPanel7);
             this.tabUC3.Dock = System.Windows.Forms.DockStyle.Top;
             this.tabUC3.Location = new System.Drawing.Point(0, 0);
             this.tabUC3.Name = "tabUC3";
@@ -705,7 +705,7 @@
             this.panelEx18.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelEx18.Location = new System.Drawing.Point(0, 0);
             this.panelEx18.Name = "panelEx18";
-            this.panelEx18.Size = new System.Drawing.Size(100, 145);
+            this.panelEx18.Size = new System.Drawing.Size(100, 144);
             this.panelEx18.Style.Alignment = System.Drawing.StringAlignment.Center;
             this.panelEx18.Style.BackColor1.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground;
             this.panelEx18.Style.BackColor2.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground2;
@@ -752,7 +752,7 @@
             this.panelEx6.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelEx6.Location = new System.Drawing.Point(310, 0);
             this.panelEx6.Name = "panelEx6";
-            this.panelEx6.Size = new System.Drawing.Size(310, 145);
+            this.panelEx6.Size = new System.Drawing.Size(310, 144);
             this.panelEx6.Style.Alignment = System.Drawing.StringAlignment.Center;
             this.panelEx6.Style.BackColor1.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground;
             this.panelEx6.Style.BackColor2.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground2;
@@ -770,7 +770,7 @@
             this.panelEx7.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelEx7.Location = new System.Drawing.Point(100, 0);
             this.panelEx7.Name = "panelEx7";
-            this.panelEx7.Size = new System.Drawing.Size(210, 145);
+            this.panelEx7.Size = new System.Drawing.Size(210, 144);
             this.panelEx7.Style.Alignment = System.Drawing.StringAlignment.Center;
             this.panelEx7.Style.BackColor1.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground;
             this.panelEx7.Style.BackColor2.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground2;
@@ -797,8 +797,8 @@
             this.tabUC2.ControlBox.SubItems.AddRange(new DevComponents.DotNetBar.BaseItem[] {
             this.tabUC2.ControlBox.MenuBox,
             this.tabUC2.ControlBox.CloseBox});
-            this.tabUC2.Controls.Add(this.superTabControlPanel5);
             this.tabUC2.Controls.Add(this.superTabControlPanel6);
+            this.tabUC2.Controls.Add(this.superTabControlPanel5);
             this.tabUC2.Dock = System.Windows.Forms.DockStyle.Top;
             this.tabUC2.Location = new System.Drawing.Point(0, 0);
             this.tabUC2.Name = "tabUC2";
@@ -991,7 +991,7 @@
             this.panelEx11.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelEx11.Location = new System.Drawing.Point(0, 0);
             this.panelEx11.Name = "panelEx11";
-            this.panelEx11.Size = new System.Drawing.Size(100, 145);
+            this.panelEx11.Size = new System.Drawing.Size(100, 144);
             this.panelEx11.Style.Alignment = System.Drawing.StringAlignment.Center;
             this.panelEx11.Style.BackColor1.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground;
             this.panelEx11.Style.BackColor2.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground2;
@@ -1038,7 +1038,7 @@
             this.panelEx1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelEx1.Location = new System.Drawing.Point(0, 0);
             this.panelEx1.Name = "panelEx1";
-            this.panelEx1.Size = new System.Drawing.Size(310, 145);
+            this.panelEx1.Size = new System.Drawing.Size(310, 144);
             this.panelEx1.Style.Alignment = System.Drawing.StringAlignment.Center;
             this.panelEx1.Style.BackColor1.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground;
             this.panelEx1.Style.BackColor2.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground2;
@@ -1056,7 +1056,7 @@
             this.panelEx3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelEx3.Location = new System.Drawing.Point(100, 0);
             this.panelEx3.Name = "panelEx3";
-            this.panelEx3.Size = new System.Drawing.Size(210, 145);
+            this.panelEx3.Size = new System.Drawing.Size(210, 144);
             this.panelEx3.Style.Alignment = System.Drawing.StringAlignment.Center;
             this.panelEx3.Style.BackColor1.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground;
             this.panelEx3.Style.BackColor2.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground2;
@@ -1277,7 +1277,7 @@
             this.panelEx2.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelEx2.Location = new System.Drawing.Point(0, 0);
             this.panelEx2.Name = "panelEx2";
-            this.panelEx2.Size = new System.Drawing.Size(100, 145);
+            this.panelEx2.Size = new System.Drawing.Size(100, 144);
             this.panelEx2.Style.Alignment = System.Drawing.StringAlignment.Center;
             this.panelEx2.Style.BackColor1.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground;
             this.panelEx2.Style.BackColor2.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground2;
@@ -1328,7 +1328,7 @@
             this.superTabControlPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.superTabControlPanel3.Location = new System.Drawing.Point(0, 0);
             this.superTabControlPanel3.Name = "superTabControlPanel3";
-            this.superTabControlPanel3.Size = new System.Drawing.Size(934, 145);
+            this.superTabControlPanel3.Size = new System.Drawing.Size(934, 169);
             this.superTabControlPanel3.TabIndex = 0;
             this.superTabControlPanel3.TabItem = this.superTabItem3;
             // 
@@ -1341,7 +1341,7 @@
             this.panelEx19.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelEx19.Location = new System.Drawing.Point(0, 0);
             this.panelEx19.Name = "panelEx19";
-            this.panelEx19.Size = new System.Drawing.Size(934, 145);
+            this.panelEx19.Size = new System.Drawing.Size(934, 169);
             this.panelEx19.Style.Alignment = System.Drawing.StringAlignment.Center;
             this.panelEx19.Style.BackColor1.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground;
             this.panelEx19.Style.BackColor2.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground2;
@@ -1419,7 +1419,7 @@
             this.panelEx28.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.panelEx28.Controls.Add(this.metroStatusBar1);
             this.panelEx28.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panelEx28.Location = new System.Drawing.Point(0, 547);
+            this.panelEx28.Location = new System.Drawing.Point(0, 618);
             this.panelEx28.Name = "panelEx28";
             this.panelEx28.Size = new System.Drawing.Size(934, 20);
             this.panelEx28.Style.Alignment = System.Drawing.StringAlignment.Center;
@@ -1466,9 +1466,9 @@
             this.panelEx21.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.panelEx21.Controls.Add(this.panelEx22);
             this.panelEx21.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelEx21.Location = new System.Drawing.Point(0, 145);
+            this.panelEx21.Location = new System.Drawing.Point(0, 169);
             this.panelEx21.Name = "panelEx21";
-            this.panelEx21.Size = new System.Drawing.Size(934, 402);
+            this.panelEx21.Size = new System.Drawing.Size(934, 449);
             this.panelEx21.Style.Alignment = System.Drawing.StringAlignment.Center;
             this.panelEx21.Style.BackColor1.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground;
             this.panelEx21.Style.BackColor2.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground2;
@@ -1483,7 +1483,7 @@
             this.panelEx22.CanvasColor = System.Drawing.SystemColors.Control;
             this.panelEx22.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.panelEx22.Controls.Add(this.tabControl);
-            this.panelEx22.Location = new System.Drawing.Point(0, 3);
+            this.panelEx22.Location = new System.Drawing.Point(0, 18);
             this.panelEx22.Name = "panelEx22";
             this.panelEx22.Size = new System.Drawing.Size(934, 393);
             this.panelEx22.Style.Alignment = System.Drawing.StringAlignment.Center;
@@ -1499,8 +1499,8 @@
             // 
             this.tabControl.BackColor = System.Drawing.Color.Transparent;
             this.tabControl.CanReorderTabs = true;
-            this.tabControl.Controls.Add(this.tabControlPanel10);
             this.tabControl.Controls.Add(this.tabControlPanel1);
+            this.tabControl.Controls.Add(this.tabControlPanel10);
             this.tabControl.Controls.Add(this.tabControlPanel7);
             this.tabControl.Controls.Add(this.tabControlPanel5);
             this.tabControl.Controls.Add(this.tabControlPanel8);
@@ -1699,6 +1699,17 @@
             this.label14.Text = "Năm";
             this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.Location = new System.Drawing.Point(28, 239);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(41, 15);
+            this.label18.TabIndex = 1;
+            this.label18.Text = "Đơn vị";
+            this.label18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // label17
             // 
             this.label17.AutoSize = true;
@@ -1742,6 +1753,19 @@
             this.label13.TabIndex = 1;
             this.label13.Text = "Tháng";
             this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // cboDonVi
+            // 
+            this.cboDonVi.DisplayMember = "Text";
+            this.cboDonVi.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cboDonVi.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cboDonVi.FormattingEnabled = true;
+            this.cboDonVi.ItemHeight = 17;
+            this.cboDonVi.Location = new System.Drawing.Point(115, 231);
+            this.cboDonVi.Name = "cboDonVi";
+            this.cboDonVi.Size = new System.Drawing.Size(150, 23);
+            this.cboDonVi.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.cboDonVi.TabIndex = 1;
             // 
             // cboNam
             // 
@@ -2790,35 +2814,11 @@
             // 
             this.v1TableAdapter.ClearBeforeFill = true;
             // 
-            // cboDonVi
-            // 
-            this.cboDonVi.DisplayMember = "Text";
-            this.cboDonVi.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.cboDonVi.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cboDonVi.FormattingEnabled = true;
-            this.cboDonVi.ItemHeight = 17;
-            this.cboDonVi.Location = new System.Drawing.Point(115, 231);
-            this.cboDonVi.Name = "cboDonVi";
-            this.cboDonVi.Size = new System.Drawing.Size(150, 23);
-            this.cboDonVi.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.cboDonVi.TabIndex = 1;
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.Location = new System.Drawing.Point(28, 239);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(41, 15);
-            this.label18.TabIndex = 1;
-            this.label18.Text = "Đơn vị";
-            this.label18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(934, 567);
+            this.ClientSize = new System.Drawing.Size(934, 638);
             this.Controls.Add(this.panelEx21);
             this.Controls.Add(this.panelEx28);
             this.Controls.Add(this.superTabControl1);
