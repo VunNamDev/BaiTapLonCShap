@@ -14,5 +14,21 @@ namespace BUL
         {
             return dalNV.layTatCaNhanVien();
         }
+        public List<NhanVien> layTatCaNhanVienTheoMa(string s)
+        {
+            return dalNV.layNhanVienTheoMa(s);
+        }
+        public void themNhanVien(NhanVien nv)
+        {
+            dalNV.themNhanVien(nv);
+        }
+        public void suaNhanVien(NhanVien nv)
+        {
+            dalNV.suaNhanVien(nv);
+        }
+        public void xoaNhanVien(NhanVien nv)
+        {
+            dalNV.xoaNhanVien(nv);
+        }
     }
 }

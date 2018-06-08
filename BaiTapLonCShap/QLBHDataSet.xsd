@@ -36,7 +36,7 @@
   <xs:element name="QLBHDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="QLBHDataSet" msprop:Generator_UserDSName="QLBHDataSet">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="v1" msprop:Generator_TableClassName="v1DataTable" msprop:Generator_TableVarName="tablev1" msprop:Generator_RowChangedName="v1RowChanged" msprop:Generator_TablePropName="v1" msprop:Generator_RowDeletingName="v1RowDeleting" msprop:Generator_RowChangingName="v1RowChanging" msprop:Generator_RowEvHandlerName="v1RowChangeEventHandler" msprop:Generator_RowDeletedName="v1RowDeleted" msprop:Generator_RowClassName="v1Row" msprop:Generator_UserTableName="v1" msprop:Generator_RowEvArgName="v1RowChangeEvent">
+        <xs:element name="v1" msprop:Generator_TableClassName="v1DataTable" msprop:Generator_TableVarName="tablev1" msprop:Generator_TablePropName="v1" msprop:Generator_RowDeletingName="v1RowDeleting" msprop:Generator_RowChangingName="v1RowChanging" msprop:Generator_RowEvHandlerName="v1RowChangeEventHandler" msprop:Generator_RowDeletedName="v1RowDeleted" msprop:Generator_UserTableName="v1" msprop:Generator_RowChangedName="v1RowChanged" msprop:Generator_RowEvArgName="v1RowChangeEvent" msprop:Generator_RowClassName="v1Row">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="stt" msprop:Generator_ColumnVarNameInTable="columnstt" msprop:Generator_ColumnPropNameInRow="stt" msprop:Generator_ColumnPropNameInTable="sttColumn" msprop:Generator_UserColumnName="stt" type="xs:long" minOccurs="0" />

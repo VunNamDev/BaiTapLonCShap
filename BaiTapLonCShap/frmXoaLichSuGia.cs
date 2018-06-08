@@ -110,5 +110,14 @@ namespace BaiTapLonCShap
                 this.Close();
             }
         }
+
+        private void btnHuy_Click(object sender, EventArgs e)
+        {
+            DialogResult dl = MessageBox.Show("Bạn muốn hủy thao tác xoá lịch sử giá?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (dl == DialogResult.Yes)
+            {
+                this.Close();
+            }
+        }
     }
 }

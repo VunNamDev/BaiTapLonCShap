@@ -37,6 +37,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.btnHuy = new DevComponents.DotNetBar.ButtonX();
             this.btnThemKhachHang = new DevComponents.DotNetBar.ButtonX();
             this.label1 = new System.Windows.Forms.Label();
             this.panelEx1.SuspendLayout();
@@ -53,6 +54,7 @@
             this.panelEx1.Controls.Add(this.label4);
             this.panelEx1.Controls.Add(this.label3);
             this.panelEx1.Controls.Add(this.label2);
+            this.panelEx1.Controls.Add(this.btnHuy);
             this.panelEx1.Controls.Add(this.btnThemKhachHang);
             this.panelEx1.Controls.Add(this.label1);
             this.panelEx1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -166,6 +168,21 @@
             this.label2.Text = "Tên khách hàng";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
+            // btnHuy
+            // 
+            this.btnHuy.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btnHuy.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.btnHuy.Image = ((System.Drawing.Image)(resources.GetObject("btnHuy.Image")));
+            this.btnHuy.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top;
+            this.btnHuy.Location = new System.Drawing.Point(338, 226);
+            this.btnHuy.Margin = new System.Windows.Forms.Padding(4);
+            this.btnHuy.Name = "btnHuy";
+            this.btnHuy.Size = new System.Drawing.Size(38, 38);
+            this.btnHuy.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.btnHuy.TabIndex = 4;
+            this.btnHuy.TextAlignment = DevComponents.DotNetBar.eButtonTextAlignment.Left;
+            this.btnHuy.Click += new System.EventHandler(this.btnHuy_Click);
+            // 
             // btnThemKhachHang
             // 
             this.btnThemKhachHang.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
@@ -175,7 +192,7 @@
             this.btnThemKhachHang.Location = new System.Drawing.Point(201, 226);
             this.btnThemKhachHang.Margin = new System.Windows.Forms.Padding(4);
             this.btnThemKhachHang.Name = "btnThemKhachHang";
-            this.btnThemKhachHang.Size = new System.Drawing.Size(149, 38);
+            this.btnThemKhachHang.Size = new System.Drawing.Size(129, 38);
             this.btnThemKhachHang.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.btnThemKhachHang.TabIndex = 4;
             this.btnThemKhachHang.Text = "Thêm khách hàng";
@@ -221,5 +238,6 @@
         private System.Windows.Forms.Label label2;
         private DevComponents.DotNetBar.ButtonX btnThemKhachHang;
         private System.Windows.Forms.Label label1;
+        private DevComponents.DotNetBar.ButtonX btnHuy;
     }
 }

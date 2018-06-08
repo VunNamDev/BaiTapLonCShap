@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmXoaLichSuGia));
             this.panelEx1 = new DevComponents.DotNetBar.PanelEx();
+            this.btnHuy = new DevComponents.DotNetBar.ButtonX();
             this.dtNgayKetThuc = new DevComponents.Editors.DateTimeAdv.DateTimeInput();
             this.dtNgayBatDau = new DevComponents.Editors.DateTimeAdv.DateTimeInput();
             this.cboMaHang = new DevComponents.DotNetBar.Controls.ComboBoxEx();
@@ -52,6 +53,7 @@
             // 
             this.panelEx1.CanvasColor = System.Drawing.SystemColors.Control;
             this.panelEx1.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.panelEx1.Controls.Add(this.btnHuy);
             this.panelEx1.Controls.Add(this.dtNgayKetThuc);
             this.panelEx1.Controls.Add(this.dtNgayBatDau);
             this.panelEx1.Controls.Add(this.cboMaHang);
@@ -77,6 +79,21 @@
             this.panelEx1.Style.ForeColor.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelText;
             this.panelEx1.Style.GradientAngle = 90;
             this.panelEx1.TabIndex = 3;
+            // 
+            // btnHuy
+            // 
+            this.btnHuy.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btnHuy.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.btnHuy.Image = ((System.Drawing.Image)(resources.GetObject("btnHuy.Image")));
+            this.btnHuy.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top;
+            this.btnHuy.Location = new System.Drawing.Point(338, 264);
+            this.btnHuy.Margin = new System.Windows.Forms.Padding(4);
+            this.btnHuy.Name = "btnHuy";
+            this.btnHuy.Size = new System.Drawing.Size(38, 38);
+            this.btnHuy.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.btnHuy.TabIndex = 10;
+            this.btnHuy.TextAlignment = DevComponents.DotNetBar.eButtonTextAlignment.Left;
+            this.btnHuy.Click += new System.EventHandler(this.btnHuy_Click);
             // 
             // dtNgayKetThuc
             // 
@@ -331,7 +348,7 @@
             this.btnXoa.Location = new System.Drawing.Point(201, 264);
             this.btnXoa.Margin = new System.Windows.Forms.Padding(4);
             this.btnXoa.Name = "btnXoa";
-            this.btnXoa.Size = new System.Drawing.Size(149, 38);
+            this.btnXoa.Size = new System.Drawing.Size(129, 38);
             this.btnXoa.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.btnXoa.TabIndex = 5;
             this.btnXoa.Text = "Xoá lịch sử giá";
@@ -381,5 +398,6 @@
         private System.Windows.Forms.Label label2;
         private DevComponents.DotNetBar.ButtonX btnXoa;
         private System.Windows.Forms.Label label1;
+        private DevComponents.DotNetBar.ButtonX btnHuy;
     }
 }

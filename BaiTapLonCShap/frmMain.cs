@@ -26,10 +26,34 @@ namespace BaiTapLonCShap
             InitializeComponent();
         }
 
+        private void loadDuLieu()
+        {
+            BULLoaiHang bulLoaiHang = new BULLoaiHang();
+            dgvLoaiHang.DataSource = bulLoaiHang.layTatCaLoaiHang();
+            dgvLoaiHang.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dgvLoaiHang.Columns[0].HeaderText = "Mã loại";
+            dgvLoaiHang.Columns[1].HeaderText = "Tên loại";
+            dgvLoaiHang.Columns[2].HeaderText = "Ghi chú";
+
+
+            BULHang bulHang = new BULHang();
+            dgvHang.DataSource = bulHang.layTatCaHang();
+            dgvHang.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dgvHang.Columns[0].HeaderText = "Mã hàng";
+            dgvHang.Columns[1].HeaderText = "Tên hàng";
+            dgvHang.Columns[2].HeaderText = "Đơn vị tính";
+            dgvHang.Columns[3].HeaderText = "Đơn giá";
+            dgvHang.Columns[4].HeaderText = "Mã loại";
+            dgvHang.Columns[5].HeaderText = "Số lượng có";
+            dgvHang.Columns[6].HeaderText = "Mã nhà cung cấp";
+        }
+
         private void btnNhanVien_Click(object sender, EventArgs e)
         {
             tabUC1.SelectedTabIndex = 0;
             loadTab(tabNhanVien);
+            BULNhanVien bulnv = new BULNhanVien();
+            dgvNhanVien.DataSource = bulnv.laytatCaNhanVien();
         }
 
         private void btnNhaCungCap_Click(object sender, EventArgs e)
@@ -37,18 +61,20 @@ namespace BaiTapLonCShap
             loadNhaCungCap();
             tabUC1.SelectedTabIndex = 1;
             loadTab(tabNCC);
+            BULNhaCungCap bulncc = new BULNhaCungCap();
+            dgvNhaCungCap.DataSource = bulncc.layTatCaNhaCungCap();
         }
 
         private void btnHang_Click(object sender, EventArgs e)
         {
-            loadHang();
+            //loadHang();
             tabUC2.SelectedTabIndex = 0;
             loadTab(tabHang);
         }
 
         private void btnLoaiHang_Click(object sender, EventArgs e)
         {
-            loadLoaiHang();
+            //loadLoaiHang();
             tabUC2.SelectedTabIndex = 1;
             loadTab(tabLoaiHang);
         }
@@ -69,14 +95,26 @@ namespace BaiTapLonCShap
 
         private void frmMain_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'QLBHDataSetUC1.uc1' table. You can move, or remove it, as needed.
+            this.uc1TableAdapter.Fill(this.QLBHDataSetUC1.uc1,12,3,2017);
+            // TODO: This line of code loads data into the 'QLBHDataSet1.uc2' table. You can move, or remove it, as needed.
+            this.uc2TableAdapter.Fill(this.QLBHDataSet1.uc2,2017,3);
             // TODO: This line of code loads data into the 'QLBHDataSet.v1' table. You can move, or remove it, as needed.
-            this.v1TableAdapter.Fill(this.QLBHDataSet.v1,1,1997);
+            //this.v1TableAdapter.Fill(this.QLBHDataSet.v1);
+            // TODO: This line of code loads data into the 'QLBHDataSet.v1' table. You can move, or remove it, as needed.
+            // this.v1TableAdapter.Fill(this.QLBHDataSet.v1,1,1997);
             loadManHinhBaoCaoDoanhSo();
-            //loadNhanVien();
+            loadNhanVien();
             loadBaoCaoDoanhSoBanHang();
-            this.reportViewer1.RefreshReport();
+            loadBaoCaoHangBanTheoNgay();
+            loadDuLieu();       //Hien thi DL bang Hang + LoaiHang
+           /// this.reportViewer1.RefreshReport();
             addParamBaoCaoDoanhSo();
-            
+
+            this.reportView1.RefreshReport();
+            this.reportHangTon.RefreshReport();
+            this.reportHangTon.RefreshReport();
+            this.reportBaoCaoHangBanTheoNgay.RefreshReport();
         }
 
         public void addParamBaoCaoDoanhSo()
@@ -94,8 +132,8 @@ namespace BaiTapLonCShap
             arrRP[3].Values.Add(txtMaNhanVien.Text);
             arrRP[4].Values.Add(cboDonVi.SelectedItem +"");
 
-            this.reportViewer1.LocalReport.SetParameters(arrRP);
-            this.reportViewer1.RefreshReport();
+            this.reportView1.LocalReport.SetParameters(arrRP);
+            this.reportView1.RefreshReport();
         }
         public void loadManHinhBaoCaoDoanhSo()
         {
@@ -130,13 +168,21 @@ namespace BaiTapLonCShap
         public void loadNhanVien()
         {
 
-            //BULNhanVien bulNV = new BULNhanVien();
-            //dgvNhanVien.DataSource = bulNV.laytatCaNhanVien();
+            BULNhanVien bulNV = new BULNhanVien();
+            dgvNhanVien.DataSource = bulNV.laytatCaNhanVien();
+            dgvNhanVien.Columns[0].HeaderText = "Mã Nhân Viên";
+            dgvNhanVien.Columns[1].HeaderText = "Tên Nhân Viên";
+            dgvNhanVien.Columns[2].HeaderText = "Địa Chỉ";
+            dgvNhanVien.Columns[3].HeaderText = "Số Điện Thoại";
         }
         public void loadNhaCungCap()
         {
-            //BULNhaCungCap bulNCC = new BULNhaCungCap();
-            //dgvNhaCungCap.DataSource = bulNCC.layTatCaNhaCungCap();
+            BULNhaCungCap bulNCC = new BULNhaCungCap();
+            dgvNhaCungCap.DataSource = bulNCC.layTatCaNhaCungCap();
+            dgvNhaCungCap.Columns[0].HeaderText = "Mã Nhà Cung Cấp";
+            dgvNhaCungCap.Columns[1].HeaderText = "Tên Nhà Cung Cấp";
+            dgvNhaCungCap.Columns[2].HeaderText = "Địa Chỉ";
+            dgvNhaCungCap.Columns[3].HeaderText = "Số Điện Thoại";
         }
         public void loadHang()
         {
@@ -155,7 +201,11 @@ namespace BaiTapLonCShap
         {
             BULKhachHang bulKH = new BULKhachHang();
             dgvKhachHang.DataSource = bulKH.layTatCaKhachHang();
-                    }
+            dgvKhachHang.Columns[0].HeaderText = "Mã khách hàng";
+            dgvKhachHang.Columns[1].HeaderText = "Tên khách hàng";
+            dgvKhachHang.Columns[2].HeaderText = "Địa chỉ";
+            dgvKhachHang.Columns[3].HeaderText = "Số điện thoại";
+        }
         public void loadLichSuGia()
         {
 
@@ -165,6 +215,12 @@ namespace BaiTapLonCShap
             dgvLichSuGia.DataSource = bulLSG.layTatCaLichSuGiaCoTenHang();
             dgvLichSuGia.Columns[0].HeaderText = "Mã hàng";
             dgvLichSuGia.Columns[1].HeaderText = "Tên hàng";
+
+            dgvLichSuGia.Columns[2].HeaderText = "Ngày bắt đầu";
+            dgvLichSuGia.Columns[3].HeaderText = "Ngày kết thúc";
+            dgvLichSuGia.Columns[4].HeaderText = "Đơn giá";
+            dgvLichSuGia.Columns[5].HeaderText = "Ngày cập nhật";
+
         }
 
         void reloadDGV()
@@ -199,12 +255,29 @@ namespace BaiTapLonCShap
 
         private void btnLapHoaDon_Click(object sender, EventArgs e)
         {
+            frmLapHoaDon frmLapHoaDon = new frmLapHoaDon();
+            frmLapHoaDon.ShowDialog();
             
         }
 
+       
         private void btnXemHoaDon_Click(object sender, EventArgs e)
         {
+            BULHoaDon bULHoaDon = new BULHoaDon();
             loadTab(tabHoaDon);
+            dtHoaDon.DataSource = bULHoaDon.hienHoaDon();
+            dtHoaDon.Columns[0].HeaderText = "Mã Hóa Đơn";
+            dtHoaDon.Columns[1].HeaderText = "Mã Khách Hàng";
+            dtHoaDon.Columns[2].HeaderText = "Tên Khách Hàng";
+            dtHoaDon.Columns[3].HeaderText = "Ngày Lập";
+            dtHoaDon.Columns[4].HeaderText = "Mã Nhân Viên";
+            dtHoaDon.Columns[5].HeaderText = "Tên Nhân Viên";
+            dtHoaDon.Columns[6].HeaderText = "Mã Hàng";
+            dtHoaDon.Columns[7].HeaderText = "Đơn Giá";
+            dtHoaDon.Columns[8].HeaderText = "Số Lượng";
+            dtHoaDon.Columns[9].HeaderText = "Thành Tiền";
+
+
         }
 
         private void btnHangBanTheoNgay_Click(object sender, EventArgs e)
@@ -215,6 +288,8 @@ namespace BaiTapLonCShap
         private void btnHangTon_Click(object sender, EventArgs e)
         {
             loadTab(tabHangTon);
+            loadBaoHangTon();
+            
         }
 
         private void btnDoanhSo_Click(object sender, EventArgs e)
@@ -455,6 +530,439 @@ namespace BaiTapLonCShap
         private void frmMain_Deactivate(object sender, EventArgs e)
         {
             isFormActive=false;
+        }
+
+        private void dataGridViewX1_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
+        {
+          
+           
+
+
+        }
+
+        private void tabControl_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void btnTimHoaDon_Click(object sender, EventArgs e)
+        {
+        
+                BULHoaDon bULHoaDon = new BULHoaDon();
+                HoaDon hoaDon = new HoaDon();
+                hoaDon.MaHoaDon = txtTimMaHoaDon.Text;
+            if(hoaDon.MaHoaDon=="")
+            {
+                dtHoaDon.DataSource = bULHoaDon.hienHoaDon();
+            }
+            else
+            {
+                dtHoaDon.DataSource = bULHoaDon.timHoaDon(hoaDon);
+            }   
+            dtHoaDon.Columns[0].HeaderText = "Mã Hóa Đơn";
+            dtHoaDon.Columns[1].HeaderText = "Mã Khách Hàng";
+            dtHoaDon.Columns[2].HeaderText = "Tên Khách Hàng";
+            dtHoaDon.Columns[3].HeaderText = "Ngày Lập";
+            dtHoaDon.Columns[4].HeaderText = "Mã Nhân Viên";
+            dtHoaDon.Columns[5].HeaderText = "Tên Nhân Viên";
+            dtHoaDon.Columns[6].HeaderText = "Mã Hàng";
+            dtHoaDon.Columns[7].HeaderText = "Đơn Giá";
+            dtHoaDon.Columns[8].HeaderText = "Số Lượng";
+            dtHoaDon.Columns[9].HeaderText = "Thành Tiền";
+
+        }
+
+        private void btnTimNV_Click(object sender, EventArgs e)
+        {
+            BULNhanVien bulnv = new BULNhanVien();
+            dgvNhanVien.DataSource = bulnv.layTatCaNhanVienTheoMa(txtNhanVien.Text);
+        }
+
+        private void btnThemNhanVien_Click(object sender, EventArgs e)
+        {
+            frmThemNhanVien frmThemNV = new frmThemNhanVien();
+            frmThemNV.ShowDialog();
+        }
+
+        private void btnSuaNhanVien_Click(object sender, EventArgs e)
+        {
+            frmSuaNhanVien frmSuaNV = new frmSuaNhanVien();
+            frmSuaNV.ShowDialog();
+        }
+
+        private void btnXoaNhanVien_Click(object sender, EventArgs e)
+        {
+            frmXoaNhanVien frmXoaNV = new frmXoaNhanVien();
+            frmXoaNV.ShowDialog();
+        }
+
+        private void btnTimNCC_Click(object sender, EventArgs e)
+        {
+            BULNhaCungCap bulncc = new BULNhaCungCap();
+            dgvNhaCungCap.DataSource = bulncc.layNhaCungCapTheoMa(txtNCC.Text);
+        }
+
+        private void btnThemNCC_Click(object sender, EventArgs e)
+        {
+            frmThemNhaCungCap frmThemNCC = new frmThemNhaCungCap();
+            frmThemNCC.ShowDialog();
+        }
+
+        private void btnSuaNCC_Click(object sender, EventArgs e)
+        {
+            frmSuaNhaCungCap frmSuaNCC = new frmSuaNhaCungCap();
+            frmSuaNCC.ShowDialog();
+        }
+
+        private void btnXoaNCC_Click(object sender, EventArgs e)
+        {
+            frmXoaNhaCungCap frmXoaNCC = new frmXoaNhaCungCap();
+            frmXoaNCC.ShowDialog();
+        }
+
+        private void btnThemNhanVien2_Click(object sender, EventArgs e)
+        {
+            frmThemNhanVien frmThem = new frmThemNhanVien();
+            frmThem.ShowDialog();
+        }
+
+        private void btnSuaNhanVien2_Click(object sender, EventArgs e)
+        {
+            NhanVien nv = new NhanVien();
+            nv.MaNhanVien = dgvNhanVien.SelectedRows[0].Cells[0].Value + "";
+            frmSuaNhanVien frm = new frmSuaNhanVien(nv);
+            frm.ShowDialog();
+        }
+
+        private void btnXoaNhanVien2_Click(object sender, EventArgs e)
+        {
+            NhanVien nv = new NhanVien();
+            nv.MaNhanVien = dgvNhanVien.SelectedRows[0].Cells[0].Value + "";
+            frmXoaNhanVien frm = new frmXoaNhanVien(nv);
+            frm.ShowDialog();
+        }
+
+        private void btnThemNhaCungCap2_Click(object sender, EventArgs e)
+        {
+            frmThemNhaCungCap frmNCC = new frmThemNhaCungCap();
+            frmNCC.ShowDialog();
+        }
+
+        private void btnSuaNhaCungCap2_Click(object sender, EventArgs e)
+        {
+            NhaCungCap ncc = new NhaCungCap();
+            ncc.MaNhaCungCap = dgvNhaCungCap.SelectedRows[0].Cells[0].Value + "";
+            frmSuaNhaCungCap frmSua = new frmSuaNhaCungCap(ncc);
+            frmSua.ShowDialog();
+        }
+
+        private void btnXoaNhaCungCap2_Click(object sender, EventArgs e)
+        {
+            NhaCungCap ncc = new NhaCungCap();
+            ncc.MaNhaCungCap = dgvNhaCungCap.SelectedRows[0].Cells[0].Value + "";
+            frmXoaNhaCungCap frm = new frmXoaNhaCungCap(ncc);
+            frm.ShowDialog();   
+        }
+
+        private void txtThangHangTon_TextChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void txtMaNhanVienHangTon_TextChanged(object sender, EventArgs e)
+        {
+            BULNhanVien bulNV = new BULNhanVien();
+            foreach (NhanVien nv in bulNV.laytatCaNhanVien())
+            {
+                if (nv.MaNhanVien == txtMaNhanVienHangTon.Text)
+                {
+                    txtTenNhanVienHangTon.Text = nv.HoTen;
+                    btnBaoCaoDoanhSoHangTon.Enabled = true;
+                    break;
+                }
+                else
+                {
+                    txtTenNhanVienHangTon.Text = "";
+                    btnBaoCaoDoanhSoHangTon.Enabled = false;
+                }
+            }
+        }
+        void loadBaoHangTon()
+        {
+            txtThangHangTon.Text = DateTime.Now.Month +"";
+            txtNamHangTon.Text = DateTime.Now.Year + "";
+            txtNgayLapHangTon.Text = DateTime.Now.ToString("dd/MM/yyyy hh:mm:ss");
+            List<string> arrDonVi = new List<string>();
+            arrDonVi.Add("Kim bảo 1");
+            arrDonVi.Add("Kim bảo 2");
+            arrDonVi.Add("Kim bảo 3");
+            cboDonViHangTon.DataSource = arrDonVi;
+
+        }
+
+        private NhanVien kiemTraNVTonTai(string ma)
+        {
+            BULNhanVien bulNhanVien = new BULNhanVien();
+            foreach (NhanVien item in bulNhanVien.laytatCaNhanVien())
+            {
+                if (item.MaNhanVien == ma)
+                {
+                    return item;
+                }
+            }
+            return null;
+        }
+        void loadBaoCaoHangBanTheoNgay()
+        {
+            //txtThangHangTon.Text = DateTime.Now.Month + "";
+            //txtNamHangTon.Text = DateTime.Now.Year + "";
+            txtNgayLapBaoCaoTheoNgay.Text = DateTime.Now.ToString("dd/MM/yyyy hh:mm:ss");
+            
+            List<string> arrDonVi = new List<string>();
+            arrDonVi.Add("Kim bảo 1");
+            arrDonVi.Add("Kim bảo 2");
+            arrDonVi.Add("Kim bảo 3");
+            cboTenDVBaoCaoTheoNgay.DataSource = arrDonVi;
+
+        }
+        public void addParamHangTon()
+        {
+            ReportParameter[] rpHT = new ReportParameter[6];
+            rpHT[0] = new ReportParameter("Thang");
+            rpHT[1] = new ReportParameter("Nam");
+            rpHT[2] = new ReportParameter("maNhanVien");
+            rpHT[3] = new ReportParameter("tenNhanVien");
+            rpHT[4] = new ReportParameter("ngayLap");
+            rpHT[5] = new ReportParameter("donVi");
+
+            rpHT[0].Values.Add(txtThangHangTon.Text);
+            rpHT[1].Values.Add(txtNamHangTon.Text);
+            rpHT[2].Values.Add(txtMaNhanVienHangTon.Text);
+            rpHT[3].Values.Add(txtTenNhanVienHangTon.Text);
+            rpHT[4].Values.Add(txtNgayLapHangTon.Text);
+            rpHT[5].Values.Add(cboDonViHangTon.SelectedItem + "");
+
+            this.reportHangTon.LocalReport.SetParameters(rpHT);
+            this.reportHangTon.RefreshReport();
+
+        }
+
+        public void addParameterBaoCaoHangBanTheoNgay()
+        {
+            ReportParameter[] rpBCHBTN = new ReportParameter[7];
+            rpBCHBTN[0] = new ReportParameter("ngay");
+            rpBCHBTN[1] = new ReportParameter("thang");
+            rpBCHBTN[2] = new ReportParameter("nam");
+            rpBCHBTN[3] = new ReportParameter("maNV");
+            rpBCHBTN[4] = new ReportParameter("tenNV");
+            rpBCHBTN[5] = new ReportParameter("ngayLap");
+            rpBCHBTN[6] = new ReportParameter("donVi");
+
+            rpBCHBTN[0].Values.Add(txtNgayBaoCaoTheoNgay.Text);
+            rpBCHBTN[1].Values.Add(txtThangBaoCaoTheoNgay.Text);
+            rpBCHBTN[2].Values.Add(txtNamBaoCaoTheoNgay.Text);
+            rpBCHBTN[3].Values.Add(txtMaNVBaoCaoTheoNgay.Text);
+            rpBCHBTN[4].Values.Add(txtTenNVBaoCaoTheoNgay.Text);
+            rpBCHBTN[5].Values.Add(txtNgayLapBaoCaoTheoNgay.Text);
+            rpBCHBTN[6].Values.Add(cboTenDVBaoCaoTheoNgay.SelectedItem + "");
+
+            this.reportBaoCaoHangBanTheoNgay.LocalReport.SetParameters(rpBCHBTN);
+            this.reportBaoCaoHangBanTheoNgay.RefreshReport();
+
+        }
+
+        private void txtNgayLap_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void reportViewer1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cboDonVi_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtTenNhanVienHangTon_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnBaoCaoDoanhSoHangTon_Click(object sender, EventArgs e)
+        {
+            this.uc2TableAdapter.Fill(this.QLBHDataSet1.uc2,int.Parse(txtNamHangTon.Text),int.Parse(txtThangHangTon.Text));
+            addParamHangTon();
+        }
+
+        private void btnBaoCaoTheoNgay_Click(object sender, EventArgs e)
+        {
+            this.uc1TableAdapter.Fill(this.QLBHDataSetUC1.uc1, int.Parse(txtNgayBaoCaoTheoNgay.Text), int.Parse(txtThangBaoCaoTheoNgay.Text), int.Parse(txtNamBaoCaoTheoNgay.Text));
+
+            addParameterBaoCaoHangBanTheoNgay();
+        }
+
+        private void txtMaNVBaoCaoTheoNgay_TextChanged(object sender, EventArgs e)
+        {
+            NhanVien nv = kiemTraNVTonTai(txtMaNVBaoCaoTheoNgay.Text);
+            if (kiemTraNVTonTai(txtMaNVBaoCaoTheoNgay.Text) != null)
+            {
+                txtTenNVBaoCaoTheoNgay.Text = nv.HoTen;
+            }
+            else
+            {
+                txtTenNVBaoCaoTheoNgay.Text = "";
+            }
+        }
+
+        private void txtNgayLapBaoCaoTheoNgay_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnThemHang_Click(object sender, EventArgs e)
+        {
+            frmThemHang frmTH = new frmThemHang();
+            frmTH.ShowDialog();
+            loadDuLieu();
+        }
+
+        private void btnSuaHang_Click(object sender, EventArgs e)
+        {
+            frmSuaHang frmSH = new frmSuaHang();
+            frmSH.ShowDialog();
+            loadDuLieu();
+        }
+
+        private void btnXoaHang_Click(object sender, EventArgs e)
+        {
+            frmXoaHang frmXH = new frmXoaHang();
+            frmXH.ShowDialog();
+            loadDuLieu();
+        }
+
+        private void btnThemLoaiHang_Click(object sender, EventArgs e)
+        {
+            frmThemLoaiHang frmTLH = new frmThemLoaiHang();
+            frmTLH.ShowDialog();
+            loadDuLieu();
+        }
+
+        private void btnSuaLoaiHang_Click(object sender, EventArgs e)
+        {
+            frmSuaLoaiHang frmSLH = new frmSuaLoaiHang();
+            frmSLH.ShowDialog();
+            loadDuLieu();
+        }
+
+        private void btnXoaLoaiHang_Click(object sender, EventArgs e)
+        {
+            frmXoaLoaiHang frmXLH = new frmXoaLoaiHang();
+            frmXLH.ShowDialog();
+            loadDuLieu();
+        }
+
+        private void btnTimHang_Click(object sender, EventArgs e)
+        {
+            Hang hang = new Hang();
+            hang.MaHang = txtHang.Text;
+            BULHang bulHang = new BULHang();
+            if (txtHang.Text == "")
+            {
+                dgvHang.DataSource = bulHang.layTatCaHang();
+            }
+            else
+            {
+                dgvHang.DataSource = bulHang.timKiem(hang);
+            }
+        }
+
+        private void btnTimLoaiHang_Click(object sender, EventArgs e)
+        {
+            LoaiHang loaiHang = new LoaiHang();
+            loaiHang.MaLoai = txtLoaiHang.Text;
+            BULLoaiHang bulLoaiHang = new BULLoaiHang();
+            if (txtLoaiHang.Text == "")
+            {
+                dgvLoaiHang.DataSource = bulLoaiHang.layTatCaLoaiHang();
+            }
+            else
+            {
+                dgvLoaiHang.DataSource = bulLoaiHang.tim(loaiHang);
+            }
+        }
+
+        private void btnThemHang2_Click(object sender, EventArgs e)
+        {
+            frmThemHang formThemHang = new frmThemHang();
+            formThemHang.ShowDialog();
+            loadDuLieu();
+        }
+
+        private void btnSuaHang2_Click(object sender, EventArgs e)
+        {
+            Hang h = new Hang();
+            h.MaHang = dgvHang.SelectedRows[0].Cells[0].Value.ToString();
+            frmSuaHang formSuaHang = new frmSuaHang(h);
+            formSuaHang.ShowDialog();
+            loadDuLieu();
+        }
+
+        private void btnXoaHang2_Click(object sender, EventArgs e)
+        {
+            Hang h = new Hang();
+            h.MaHang = dgvHang.SelectedRows[0].Cells[0].Value.ToString();
+            frmXoaHang formXoaHang = new frmXoaHang(h);
+            formXoaHang.ShowDialog();
+            loadDuLieu();
+        }
+
+        private void btnThemLoaiHang2_Click(object sender, EventArgs e)
+        {
+            frmThemLoaiHang formThemLoaiHang = new frmThemLoaiHang();
+            formThemLoaiHang.ShowDialog();
+            loadDuLieu();
+        }
+
+        private void btnSuaLoaiHang2_Click(object sender, EventArgs e)
+        {
+            LoaiHang lh = new LoaiHang();
+            lh.MaLoai = dgvLoaiHang.SelectedRows[0].Cells[0].Value.ToString();
+            frmSuaLoaiHang formSuaLoaiHang = new frmSuaLoaiHang(lh);
+            formSuaLoaiHang.ShowDialog();
+            loadDuLieu();
+        }
+
+        private void btnXoaLoaiHang2_Click(object sender, EventArgs e)
+        {
+            LoaiHang lh = new LoaiHang();
+            lh.MaLoai = dgvLoaiHang.SelectedRows[0].Cells[0].Value.ToString();
+            frmXoaLoaiHang formXoaLoaiHang = new frmXoaLoaiHang(lh);
+            formXoaLoaiHang.ShowDialog();
+            loadDuLieu();
+        }
+
+        private void txtTenNVBaoCaoTheoNgay_TextChanged(object sender, EventArgs e)
+        {
+            if (txtMaNVBaoCaoTheoNgay.Text != "")
+            {
+                btnBaoCaoTheoNgay.Enabled = true;
+            }
+            else
+            {
+                btnBaoCaoTheoNgay.Enabled = false;
+            }
+        }
+
+        private void superTabControl1_SelectedTabChanged(object sender, SuperTabStripSelectedTabChangedEventArgs e)
+        {
+
+        }
+
+        private void superTabControlPanel1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

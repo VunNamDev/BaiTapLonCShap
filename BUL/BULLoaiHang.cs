@@ -16,5 +16,25 @@ namespace BUL
         {
             return dalLH.layTatCaLoaiHang();
         }
+        public List<LoaiHang> layDanhSachMaLoaiHang(string ma)
+        {
+            return dalLH.danhSachMaLoaiHang(ma);
+        }
+        public void them(LoaiHang lh)
+        {
+            dalLH.themLoaiHang(lh);
+        }
+        public void sua(LoaiHang lh)
+        {
+            dalLH.suaLoaiHang(lh);
+        }
+        public void xoa(LoaiHang lh)
+        {
+            dalLH.xoaLoaiHang(lh);
+        }
+        public List<LoaiHang> tim(LoaiHang lh)
+        {
+            return dalLH.timLoaiHang(lh);
+        }
     }
 }

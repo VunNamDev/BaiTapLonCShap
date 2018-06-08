@@ -58,5 +58,16 @@ namespace DTO
             this.TenLoai = tenLoai;
             this.GhiChu = ghiChu;
         }
+
+        public LoaiHang(string maLoai, string tenLoai)
+        {
+            this.MaLoai = maLoai;
+            this.TenLoai = tenLoai;
+        }
+
+        public LoaiHang(string maLoai)
+        {
+            this.MaLoai = maLoai;
+        }
     }
 }

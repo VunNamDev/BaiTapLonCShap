@@ -94,3 +94,193 @@ C:\Users\Dell ALL\Pictures\BaiTapLonCShap\BaiTapLonCShap\BaiTapLonCShap\obj\Debu
 C:\Users\Dell ALL\Pictures\BaiTapLonCShap\BaiTapLonCShap\BaiTapLonCShap\obj\Debug\BaiTapLonCShap.csproj.GenerateResource.Cache
 C:\Users\Dell ALL\Pictures\BaiTapLonCShap\BaiTapLonCShap\BaiTapLonCShap\obj\Debug\RdlCompile.cache
 C:\Users\Dell ALL\Pictures\BaiTapLonCShap\BaiTapLonCShap\BaiTapLonCShap\obj\Debug\RdlCompile.compiled
+D:\BaiTapLonWindown\HoanThienHan\BaiTapLonCShap-master\BaiTapLonCShap\bin\Debug\BaiTapLonCShap.exe.config
+D:\BaiTapLonWindown\HoanThienHan\BaiTapLonCShap-master\BaiTapLonCShap\bin\Debug\BaiTapLonCShap.exe
+D:\BaiTapLonWindown\HoanThienHan\BaiTapLonCShap-master\BaiTapLonCShap\bin\Debug\BaiTapLonCShap.pdb
+D:\BaiTapLonWindown\HoanThienHan\BaiTapLonCShap-master\BaiTapLonCShap\bin\Debug\BUL.dll
+D:\BaiTapLonWindown\HoanThienHan\BaiTapLonCShap-master\BaiTapLonCShap\bin\Debug\DevComponents.DotNetBar2.dll
+D:\BaiTapLonWindown\HoanThienHan\BaiTapLonCShap-master\BaiTapLonCShap\bin\Debug\DTO.dll
+D:\BaiTapLonWindown\HoanThienHan\BaiTapLonCShap-master\BaiTapLonCShap\bin\Debug\DAL.dll
+D:\BaiTapLonWindown\HoanThienHan\BaiTapLonCShap-master\BaiTapLonCShap\bin\Debug\BUL.pdb
+D:\BaiTapLonWindown\HoanThienHan\BaiTapLonCShap-master\BaiTapLonCShap\bin\Debug\DevComponents.DotNetBar2.xml
+D:\BaiTapLonWindown\HoanThienHan\BaiTapLonCShap-master\BaiTapLonCShap\bin\Debug\DTO.pdb
+D:\BaiTapLonWindown\HoanThienHan\BaiTapLonCShap-master\BaiTapLonCShap\bin\Debug\DAL.pdb
+D:\BaiTapLonWindown\HoanThienHan\BaiTapLonCShap-master\BaiTapLonCShap\obj\Debug\BaiTapLonCShap.csprojResolveAssemblyReference.cache
+D:\BaiTapLonWindown\HoanThienHan\BaiTapLonCShap-master\BaiTapLonCShap\obj\Debug\BaiTapLonCShap.frmMain.resources
+D:\BaiTapLonWindown\HoanThienHan\BaiTapLonCShap-master\BaiTapLonCShap\obj\Debug\BaiTapLonCShap.frmSuaKhachHang.resources
+D:\BaiTapLonWindown\HoanThienHan\BaiTapLonCShap-master\BaiTapLonCShap\obj\Debug\BaiTapLonCShap.frmSuaLichSuGia.resources
+D:\BaiTapLonWindown\HoanThienHan\BaiTapLonCShap-master\BaiTapLonCShap\obj\Debug\BaiTapLonCShap.frmThemKhachHang.resources
+D:\BaiTapLonWindown\HoanThienHan\BaiTapLonCShap-master\BaiTapLonCShap\obj\Debug\BaiTapLonCShap.frmThemLichSuGia.resources
+D:\BaiTapLonWindown\HoanThienHan\BaiTapLonCShap-master\BaiTapLonCShap\obj\Debug\BaiTapLonCShap.frmXoaKhachHang.resources
+D:\BaiTapLonWindown\HoanThienHan\BaiTapLonCShap-master\BaiTapLonCShap\obj\Debug\BaiTapLonCShap.frmXoaLichSuGia.resources
+D:\BaiTapLonWindown\HoanThienHan\BaiTapLonCShap-master\BaiTapLonCShap\obj\Debug\BaiTapLonCShap.Properties.Resources.resources
+D:\BaiTapLonWindown\HoanThienHan\BaiTapLonCShap-master\BaiTapLonCShap\obj\Debug\BaiTapLonCShap.csproj.GenerateResource.Cache
+D:\BaiTapLonWindown\HoanThienHan\BaiTapLonCShap-master\BaiTapLonCShap\obj\Debug\BaiTapLonCShap.csproj.CoreCompileInputs.cache
+D:\BaiTapLonWindown\HoanThienHan\BaiTapLonCShap-master\BaiTapLonCShap\obj\Debug\BaiTapLonCShap.exe
+D:\BaiTapLonWindown\HoanThienHan\BaiTapLonCShap-master\BaiTapLonCShap\obj\Debug\BaiTapLonCShap.pdb
+D:\BaiTapLonWindown\HoanThienHan\BaiTapLonCShap-master\BaiTapLonCShap\obj\Debug\BaiTapLonCShap.frmLapHoaDon.resources
+D:\HoanThienHan\BaiTapLonCShap-master\BaiTapLonCShap\bin\Debug\BaiTapLonCShap.exe.config
+D:\HoanThienHan\BaiTapLonCShap-master\BaiTapLonCShap\obj\Debug\BaiTapLonCShap.exe
+D:\HoanThienHan\BaiTapLonCShap-master\BaiTapLonCShap\obj\Debug\BaiTapLonCShap.pdb
+D:\HoanThienHan\BaiTapLonCShap-master\BaiTapLonCShap\bin\Debug\BaiTapLonCShap.exe
+D:\HoanThienHan\BaiTapLonCShap-master\BaiTapLonCShap\bin\Debug\BaiTapLonCShap.pdb
+D:\HoanThienHan\BaiTapLonCShap-master\BaiTapLonCShap\bin\Debug\BUL.dll
+D:\HoanThienHan\BaiTapLonCShap-master\BaiTapLonCShap\bin\Debug\DevComponents.DotNetBar2.dll
+D:\HoanThienHan\BaiTapLonCShap-master\BaiTapLonCShap\bin\Debug\DTO.dll
+D:\HoanThienHan\BaiTapLonCShap-master\BaiTapLonCShap\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+D:\HoanThienHan\BaiTapLonCShap-master\BaiTapLonCShap\bin\Debug\DAL.dll
+D:\HoanThienHan\BaiTapLonCShap-master\BaiTapLonCShap\bin\Debug\BUL.pdb
+D:\HoanThienHan\BaiTapLonCShap-master\BaiTapLonCShap\bin\Debug\DevComponents.DotNetBar2.xml
+D:\HoanThienHan\BaiTapLonCShap-master\BaiTapLonCShap\bin\Debug\DTO.pdb
+D:\HoanThienHan\BaiTapLonCShap-master\BaiTapLonCShap\bin\Debug\DAL.pdb
+D:\HoanThienHan\BaiTapLonCShap-master\BaiTapLonCShap\obj\Debug\BaiTapLonCShap.csprojResolveAssemblyReference.cache
+D:\HoanThienHan\BaiTapLonCShap-master\BaiTapLonCShap\obj\Debug\BaiTapLonCShap.frmLapHoaDon.resources
+D:\HoanThienHan\BaiTapLonCShap-master\BaiTapLonCShap\obj\Debug\BaiTapLonCShap.frmMain.resources
+D:\HoanThienHan\BaiTapLonCShap-master\BaiTapLonCShap\obj\Debug\BaiTapLonCShap.frmSuaKhachHang.resources
+D:\HoanThienHan\BaiTapLonCShap-master\BaiTapLonCShap\obj\Debug\BaiTapLonCShap.frmSuaLichSuGia.resources
+D:\HoanThienHan\BaiTapLonCShap-master\BaiTapLonCShap\obj\Debug\BaiTapLonCShap.frmThemKhachHang.resources
+D:\HoanThienHan\BaiTapLonCShap-master\BaiTapLonCShap\obj\Debug\BaiTapLonCShap.frmThemLichSuGia.resources
+D:\HoanThienHan\BaiTapLonCShap-master\BaiTapLonCShap\obj\Debug\BaiTapLonCShap.frmXoaKhachHang.resources
+D:\HoanThienHan\BaiTapLonCShap-master\BaiTapLonCShap\obj\Debug\BaiTapLonCShap.frmXoaLichSuGia.resources
+D:\HoanThienHan\BaiTapLonCShap-master\BaiTapLonCShap\obj\Debug\BaiTapLonCShap.Properties.Resources.resources
+D:\HoanThienHan\BaiTapLonCShap-master\BaiTapLonCShap\obj\Debug\BaiTapLonCShap.csproj.GenerateResource.Cache
+D:\HoanThienHan\BaiTapLonCShap-master\BaiTapLonCShap\obj\Debug\RdlCompile.cache
+D:\HoanThienHan\BaiTapLonCShap-master\BaiTapLonCShap\obj\Debug\RdlCompile.compiled
+C:\Users\TrongGiang\Desktop\HoanThienHan\BaiTapLonCShap-master\BaiTapLonCShap\bin\Debug\BaiTapLonCShap.exe.config
+C:\Users\TrongGiang\Desktop\HoanThienHan\BaiTapLonCShap-master\BaiTapLonCShap\obj\Debug\BaiTapLonCShap.exe
+C:\Users\TrongGiang\Desktop\HoanThienHan\BaiTapLonCShap-master\BaiTapLonCShap\obj\Debug\BaiTapLonCShap.pdb
+C:\Users\TrongGiang\Desktop\HoanThienHan\BaiTapLonCShap-master\BaiTapLonCShap\bin\Debug\BaiTapLonCShap.exe
+C:\Users\TrongGiang\Desktop\HoanThienHan\BaiTapLonCShap-master\BaiTapLonCShap\bin\Debug\BaiTapLonCShap.pdb
+C:\Users\TrongGiang\Desktop\HoanThienHan\BaiTapLonCShap-master\BaiTapLonCShap\bin\Debug\BUL.dll
+C:\Users\TrongGiang\Desktop\HoanThienHan\BaiTapLonCShap-master\BaiTapLonCShap\bin\Debug\DevComponents.DotNetBar2.dll
+C:\Users\TrongGiang\Desktop\HoanThienHan\BaiTapLonCShap-master\BaiTapLonCShap\bin\Debug\DTO.dll
+C:\Users\TrongGiang\Desktop\HoanThienHan\BaiTapLonCShap-master\BaiTapLonCShap\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+C:\Users\TrongGiang\Desktop\HoanThienHan\BaiTapLonCShap-master\BaiTapLonCShap\bin\Debug\DAL.dll
+C:\Users\TrongGiang\Desktop\HoanThienHan\BaiTapLonCShap-master\BaiTapLonCShap\bin\Debug\BUL.pdb
+C:\Users\TrongGiang\Desktop\HoanThienHan\BaiTapLonCShap-master\BaiTapLonCShap\bin\Debug\DevComponents.DotNetBar2.xml
+C:\Users\TrongGiang\Desktop\HoanThienHan\BaiTapLonCShap-master\BaiTapLonCShap\bin\Debug\DTO.pdb
+C:\Users\TrongGiang\Desktop\HoanThienHan\BaiTapLonCShap-master\BaiTapLonCShap\bin\Debug\DAL.pdb
+C:\Users\TrongGiang\Desktop\HoanThienHan\BaiTapLonCShap-master\BaiTapLonCShap\obj\Debug\BaiTapLonCShap.csprojResolveAssemblyReference.cache
+C:\Users\TrongGiang\Desktop\HoanThienHan\BaiTapLonCShap-master\BaiTapLonCShap\obj\Debug\BaiTapLonCShap.frmLapHoaDon.resources
+C:\Users\TrongGiang\Desktop\HoanThienHan\BaiTapLonCShap-master\BaiTapLonCShap\obj\Debug\BaiTapLonCShap.frmMain.resources
+C:\Users\TrongGiang\Desktop\HoanThienHan\BaiTapLonCShap-master\BaiTapLonCShap\obj\Debug\BaiTapLonCShap.frmSuaKhachHang.resources
+C:\Users\TrongGiang\Desktop\HoanThienHan\BaiTapLonCShap-master\BaiTapLonCShap\obj\Debug\BaiTapLonCShap.frmSuaLichSuGia.resources
+C:\Users\TrongGiang\Desktop\HoanThienHan\BaiTapLonCShap-master\BaiTapLonCShap\obj\Debug\BaiTapLonCShap.frmThemKhachHang.resources
+C:\Users\TrongGiang\Desktop\HoanThienHan\BaiTapLonCShap-master\BaiTapLonCShap\obj\Debug\BaiTapLonCShap.frmThemLichSuGia.resources
+C:\Users\TrongGiang\Desktop\HoanThienHan\BaiTapLonCShap-master\BaiTapLonCShap\obj\Debug\BaiTapLonCShap.frmXoaKhachHang.resources
+C:\Users\TrongGiang\Desktop\HoanThienHan\BaiTapLonCShap-master\BaiTapLonCShap\obj\Debug\BaiTapLonCShap.frmXoaLichSuGia.resources
+C:\Users\TrongGiang\Desktop\HoanThienHan\BaiTapLonCShap-master\BaiTapLonCShap\obj\Debug\BaiTapLonCShap.Properties.Resources.resources
+C:\Users\TrongGiang\Desktop\HoanThienHan\BaiTapLonCShap-master\BaiTapLonCShap\obj\Debug\BaiTapLonCShap.csproj.GenerateResource.Cache
+C:\Users\TrongGiang\Desktop\HoanThienHan\BaiTapLonCShap-master\BaiTapLonCShap\obj\Debug\RdlCompile.cache
+C:\Users\TrongGiang\Desktop\HoanThienHan\BaiTapLonCShap-master\BaiTapLonCShap\obj\Debug\RdlCompile.compiled
+C:\Users\TrongGiang\Desktop\HoanThienHan - Copy\BaiTapLonCShap-master\BaiTapLonCShap\bin\Debug\BaiTapLonCShap.exe.config
+C:\Users\TrongGiang\Desktop\HoanThienHan - Copy\BaiTapLonCShap-master\BaiTapLonCShap\obj\Debug\BaiTapLonCShap.exe
+C:\Users\TrongGiang\Desktop\HoanThienHan - Copy\BaiTapLonCShap-master\BaiTapLonCShap\obj\Debug\BaiTapLonCShap.pdb
+C:\Users\TrongGiang\Desktop\HoanThienHan - Copy\BaiTapLonCShap-master\BaiTapLonCShap\bin\Debug\BaiTapLonCShap.exe
+C:\Users\TrongGiang\Desktop\HoanThienHan - Copy\BaiTapLonCShap-master\BaiTapLonCShap\bin\Debug\BaiTapLonCShap.pdb
+C:\Users\TrongGiang\Desktop\HoanThienHan - Copy\BaiTapLonCShap-master\BaiTapLonCShap\bin\Debug\BUL.dll
+C:\Users\TrongGiang\Desktop\HoanThienHan - Copy\BaiTapLonCShap-master\BaiTapLonCShap\bin\Debug\DevComponents.DotNetBar2.dll
+C:\Users\TrongGiang\Desktop\HoanThienHan - Copy\BaiTapLonCShap-master\BaiTapLonCShap\bin\Debug\DTO.dll
+C:\Users\TrongGiang\Desktop\HoanThienHan - Copy\BaiTapLonCShap-master\BaiTapLonCShap\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+C:\Users\TrongGiang\Desktop\HoanThienHan - Copy\BaiTapLonCShap-master\BaiTapLonCShap\bin\Debug\DAL.dll
+C:\Users\TrongGiang\Desktop\HoanThienHan - Copy\BaiTapLonCShap-master\BaiTapLonCShap\bin\Debug\BUL.pdb
+C:\Users\TrongGiang\Desktop\HoanThienHan - Copy\BaiTapLonCShap-master\BaiTapLonCShap\bin\Debug\DevComponents.DotNetBar2.xml
+C:\Users\TrongGiang\Desktop\HoanThienHan - Copy\BaiTapLonCShap-master\BaiTapLonCShap\bin\Debug\DTO.pdb
+C:\Users\TrongGiang\Desktop\HoanThienHan - Copy\BaiTapLonCShap-master\BaiTapLonCShap\bin\Debug\DAL.pdb
+C:\Users\TrongGiang\Desktop\HoanThienHan - Copy\BaiTapLonCShap-master\BaiTapLonCShap\obj\Debug\BaiTapLonCShap.csprojResolveAssemblyReference.cache
+C:\Users\TrongGiang\Desktop\HoanThienHan - Copy\BaiTapLonCShap-master\BaiTapLonCShap\obj\Debug\BaiTapLonCShap.frmLapHoaDon.resources
+C:\Users\TrongGiang\Desktop\HoanThienHan - Copy\BaiTapLonCShap-master\BaiTapLonCShap\obj\Debug\BaiTapLonCShap.frmMain.resources
+C:\Users\TrongGiang\Desktop\HoanThienHan - Copy\BaiTapLonCShap-master\BaiTapLonCShap\obj\Debug\BaiTapLonCShap.frmSuaKhachHang.resources
+C:\Users\TrongGiang\Desktop\HoanThienHan - Copy\BaiTapLonCShap-master\BaiTapLonCShap\obj\Debug\BaiTapLonCShap.frmSuaLichSuGia.resources
+C:\Users\TrongGiang\Desktop\HoanThienHan - Copy\BaiTapLonCShap-master\BaiTapLonCShap\obj\Debug\BaiTapLonCShap.frmThemKhachHang.resources
+C:\Users\TrongGiang\Desktop\HoanThienHan - Copy\BaiTapLonCShap-master\BaiTapLonCShap\obj\Debug\BaiTapLonCShap.frmThemLichSuGia.resources
+C:\Users\TrongGiang\Desktop\HoanThienHan - Copy\BaiTapLonCShap-master\BaiTapLonCShap\obj\Debug\BaiTapLonCShap.frmXoaKhachHang.resources
+C:\Users\TrongGiang\Desktop\HoanThienHan - Copy\BaiTapLonCShap-master\BaiTapLonCShap\obj\Debug\BaiTapLonCShap.frmXoaLichSuGia.resources
+C:\Users\TrongGiang\Desktop\HoanThienHan - Copy\BaiTapLonCShap-master\BaiTapLonCShap\obj\Debug\BaiTapLonCShap.Properties.Resources.resources
+C:\Users\TrongGiang\Desktop\HoanThienHan - Copy\BaiTapLonCShap-master\BaiTapLonCShap\obj\Debug\BaiTapLonCShap.csproj.GenerateResource.Cache
+C:\Users\TrongGiang\Desktop\HoanThienHan - Copy\BaiTapLonCShap-master\BaiTapLonCShap\obj\Debug\RdlCompile.cache
+C:\Users\TrongGiang\Desktop\HoanThienHan - Copy\BaiTapLonCShap-master\BaiTapLonCShap\obj\Debug\RdlCompile.compiled
+C:\Users\TrongGiang\Desktop\HoanThienHan - Copy\BaiTapLonCShap-master\BaiTapLonCShap\obj\Debug\BaiTapLonCShap.frmThemNhanVien.resources
+C:\Users\TrongGiang\Desktop\HoanThienHan - Copy\BaiTapLonCShap-master\BaiTapLonCShap\obj\Debug\BaiTapLonCShap.frmSuaNhanVien.resources
+C:\Users\TrongGiang\Desktop\HoanThienHan - Copy\BaiTapLonCShap-master\BaiTapLonCShap\obj\Debug\BaiTapLonCShap.frmXoaNhanVien.resources
+C:\Users\TrongGiang\Desktop\HoanThienHan - Copy\BaiTapLonCShap-master\BaiTapLonCShap\obj\Debug\BaiTapLonCShap.frmThemNhaCungCap.resources
+C:\Users\TrongGiang\Desktop\HoanThienHan - Copy\BaiTapLonCShap-master\BaiTapLonCShap\obj\Debug\BaiTapLonCShap.frmSuaNhaCungCap.resources
+C:\Users\TrongGiang\Desktop\HoanThienHan - Copy\BaiTapLonCShap-master\BaiTapLonCShap\obj\Debug\BaiTapLonCShap.frmXoaNhaCungCap.resources
+C:\Users\TrongGiang\Desktop\HoanThienHan - Copy - Copy (2)\BaiTapLonCShap-master\BaiTapLonCShap\bin\Debug\BaiTapLonCShap.exe.config
+C:\Users\TrongGiang\Desktop\HoanThienHan - Copy - Copy (2)\BaiTapLonCShap-master\BaiTapLonCShap\obj\Debug\BaiTapLonCShap.exe
+C:\Users\TrongGiang\Desktop\HoanThienHan - Copy - Copy (2)\BaiTapLonCShap-master\BaiTapLonCShap\obj\Debug\BaiTapLonCShap.pdb
+C:\Users\TrongGiang\Desktop\HoanThienHan - Copy - Copy (2)\BaiTapLonCShap-master\BaiTapLonCShap\bin\Debug\BaiTapLonCShap.exe
+C:\Users\TrongGiang\Desktop\HoanThienHan - Copy - Copy (2)\BaiTapLonCShap-master\BaiTapLonCShap\bin\Debug\BaiTapLonCShap.pdb
+C:\Users\TrongGiang\Desktop\HoanThienHan - Copy - Copy (2)\BaiTapLonCShap-master\BaiTapLonCShap\bin\Debug\DevComponents.DotNetBar2.dll
+C:\Users\TrongGiang\Desktop\HoanThienHan - Copy - Copy (2)\BaiTapLonCShap-master\BaiTapLonCShap\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+C:\Users\TrongGiang\Desktop\HoanThienHan - Copy - Copy (2)\BaiTapLonCShap-master\BaiTapLonCShap\bin\Debug\DAL.dll
+C:\Users\TrongGiang\Desktop\HoanThienHan - Copy - Copy (2)\BaiTapLonCShap-master\BaiTapLonCShap\bin\Debug\BUL.pdb
+C:\Users\TrongGiang\Desktop\HoanThienHan - Copy - Copy (2)\BaiTapLonCShap-master\BaiTapLonCShap\bin\Debug\DevComponents.DotNetBar2.xml
+C:\Users\TrongGiang\Desktop\HoanThienHan - Copy - Copy (2)\BaiTapLonCShap-master\BaiTapLonCShap\bin\Debug\DTO.pdb
+C:\Users\TrongGiang\Desktop\HoanThienHan - Copy - Copy (2)\BaiTapLonCShap-master\BaiTapLonCShap\bin\Debug\DAL.pdb
+C:\Users\TrongGiang\Desktop\HoanThienHan - Copy - Copy (2)\BaiTapLonCShap-master\BaiTapLonCShap\obj\Debug\BaiTapLonCShap.frmLapHoaDon.resources
+C:\Users\TrongGiang\Desktop\HoanThienHan - Copy - Copy (2)\BaiTapLonCShap-master\BaiTapLonCShap\obj\Debug\BaiTapLonCShap.frmMain.resources
+C:\Users\TrongGiang\Desktop\HoanThienHan - Copy - Copy (2)\BaiTapLonCShap-master\BaiTapLonCShap\obj\Debug\BaiTapLonCShap.frmSuaKhachHang.resources
+C:\Users\TrongGiang\Desktop\HoanThienHan - Copy - Copy (2)\BaiTapLonCShap-master\BaiTapLonCShap\obj\Debug\BaiTapLonCShap.frmSuaLichSuGia.resources
+C:\Users\TrongGiang\Desktop\HoanThienHan - Copy - Copy (2)\BaiTapLonCShap-master\BaiTapLonCShap\obj\Debug\BaiTapLonCShap.frmSuaNhaCungCap.resources
+C:\Users\TrongGiang\Desktop\HoanThienHan - Copy - Copy (2)\BaiTapLonCShap-master\BaiTapLonCShap\obj\Debug\BaiTapLonCShap.frmSuaNhanVien.resources
+C:\Users\TrongGiang\Desktop\HoanThienHan - Copy - Copy (2)\BaiTapLonCShap-master\BaiTapLonCShap\obj\Debug\BaiTapLonCShap.frmThemKhachHang.resources
+C:\Users\TrongGiang\Desktop\HoanThienHan - Copy - Copy (2)\BaiTapLonCShap-master\BaiTapLonCShap\obj\Debug\BaiTapLonCShap.frmThemLichSuGia.resources
+C:\Users\TrongGiang\Desktop\HoanThienHan - Copy - Copy (2)\BaiTapLonCShap-master\BaiTapLonCShap\obj\Debug\BaiTapLonCShap.frmThemNhaCungCap.resources
+C:\Users\TrongGiang\Desktop\HoanThienHan - Copy - Copy (2)\BaiTapLonCShap-master\BaiTapLonCShap\obj\Debug\BaiTapLonCShap.frmThemNhanVien.resources
+C:\Users\TrongGiang\Desktop\HoanThienHan - Copy - Copy (2)\BaiTapLonCShap-master\BaiTapLonCShap\obj\Debug\BaiTapLonCShap.frmXoaKhachHang.resources
+C:\Users\TrongGiang\Desktop\HoanThienHan - Copy - Copy (2)\BaiTapLonCShap-master\BaiTapLonCShap\obj\Debug\BaiTapLonCShap.frmXoaLichSuGia.resources
+C:\Users\TrongGiang\Desktop\HoanThienHan - Copy - Copy (2)\BaiTapLonCShap-master\BaiTapLonCShap\obj\Debug\BaiTapLonCShap.frmXoaNhaCungCap.resources
+C:\Users\TrongGiang\Desktop\HoanThienHan - Copy - Copy (2)\BaiTapLonCShap-master\BaiTapLonCShap\obj\Debug\BaiTapLonCShap.frmXoaNhanVien.resources
+C:\Users\TrongGiang\Desktop\HoanThienHan - Copy - Copy (2)\BaiTapLonCShap-master\BaiTapLonCShap\obj\Debug\BaiTapLonCShap.Properties.Resources.resources
+C:\Users\TrongGiang\Desktop\HoanThienHan - Copy - Copy (2)\BaiTapLonCShap-master\BaiTapLonCShap\obj\Debug\BaiTapLonCShap.csproj.GenerateResource.Cache
+C:\Users\TrongGiang\Desktop\HoanThienHan - Copy - Copy (2)\BaiTapLonCShap-master\BaiTapLonCShap\obj\Debug\RdlCompile.cache
+C:\Users\TrongGiang\Desktop\HoanThienHan - Copy - Copy (2)\BaiTapLonCShap-master\BaiTapLonCShap\obj\Debug\RdlCompile.compiled
+C:\Users\TrongGiang\Desktop\HoanThienHan - Copy - Copy (2)\BaiTapLonCShap-master\BaiTapLonCShap\bin\Debug\BUL.dll
+C:\Users\TrongGiang\Desktop\HoanThienHan - Copy - Copy (2)\BaiTapLonCShap-master\BaiTapLonCShap\bin\Debug\DTO.dll
+C:\Users\TrongGiang\Desktop\HoanThienHan - Copy - Copy (2)\BaiTapLonCShap-master\BaiTapLonCShap\obj\Debug\BaiTapLonCShap.frmSuaHang.resources
+C:\Users\TrongGiang\Desktop\HoanThienHan - Copy - Copy (2)\BaiTapLonCShap-master\BaiTapLonCShap\obj\Debug\BaiTapLonCShap.frmSuaLoaiHang.resources
+C:\Users\TrongGiang\Desktop\HoanThienHan - Copy - Copy (2)\BaiTapLonCShap-master\BaiTapLonCShap\obj\Debug\BaiTapLonCShap.frmThemHang.resources
+C:\Users\TrongGiang\Desktop\HoanThienHan - Copy - Copy (2)\BaiTapLonCShap-master\BaiTapLonCShap\obj\Debug\BaiTapLonCShap.frmThemLoaiHang.resources
+C:\Users\TrongGiang\Desktop\HoanThienHan - Copy - Copy (2)\BaiTapLonCShap-master\BaiTapLonCShap\obj\Debug\BaiTapLonCShap.frmXoaHang.resources
+C:\Users\TrongGiang\Desktop\HoanThienHan - Copy - Copy (2)\BaiTapLonCShap-master\BaiTapLonCShap\obj\Debug\BaiTapLonCShap.frmXoaLoaiHang.resources
+C:\Users\TrongGiang\Desktop\HoanThienHan - Copy - Copy (2)\BaiTapLonCShap-master\BaiTapLonCShap\obj\Debug\BaiTapLonCShap.csprojResolveAssemblyReference.cache
+D:\BaiTapLonCShap-master\BaiTapLonCShap\bin\Debug\BaiTapLonCShap.exe.config
+D:\BaiTapLonCShap-master\BaiTapLonCShap\obj\Debug\BaiTapLonCShap.exe
+D:\BaiTapLonCShap-master\BaiTapLonCShap\obj\Debug\BaiTapLonCShap.pdb
+D:\BaiTapLonCShap-master\BaiTapLonCShap\bin\Debug\BaiTapLonCShap.exe
+D:\BaiTapLonCShap-master\BaiTapLonCShap\bin\Debug\BaiTapLonCShap.pdb
+D:\BaiTapLonCShap-master\BaiTapLonCShap\bin\Debug\BUL.dll
+D:\BaiTapLonCShap-master\BaiTapLonCShap\bin\Debug\DevComponents.DotNetBar2.dll
+D:\BaiTapLonCShap-master\BaiTapLonCShap\bin\Debug\DTO.dll
+D:\BaiTapLonCShap-master\BaiTapLonCShap\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+D:\BaiTapLonCShap-master\BaiTapLonCShap\bin\Debug\DAL.dll
+D:\BaiTapLonCShap-master\BaiTapLonCShap\bin\Debug\BUL.pdb
+D:\BaiTapLonCShap-master\BaiTapLonCShap\bin\Debug\DevComponents.DotNetBar2.xml
+D:\BaiTapLonCShap-master\BaiTapLonCShap\bin\Debug\DTO.pdb
+D:\BaiTapLonCShap-master\BaiTapLonCShap\bin\Debug\DAL.pdb
+D:\BaiTapLonCShap-master\BaiTapLonCShap\obj\Debug\BaiTapLonCShap.csprojResolveAssemblyReference.cache
+D:\BaiTapLonCShap-master\BaiTapLonCShap\obj\Debug\BaiTapLonCShap.frmLapHoaDon.resources
+D:\BaiTapLonCShap-master\BaiTapLonCShap\obj\Debug\BaiTapLonCShap.frmMain.resources
+D:\BaiTapLonCShap-master\BaiTapLonCShap\obj\Debug\BaiTapLonCShap.frmSuaHang.resources
+D:\BaiTapLonCShap-master\BaiTapLonCShap\obj\Debug\BaiTapLonCShap.frmSuaKhachHang.resources
+D:\BaiTapLonCShap-master\BaiTapLonCShap\obj\Debug\BaiTapLonCShap.frmSuaLichSuGia.resources
+D:\BaiTapLonCShap-master\BaiTapLonCShap\obj\Debug\BaiTapLonCShap.frmSuaLoaiHang.resources
+D:\BaiTapLonCShap-master\BaiTapLonCShap\obj\Debug\BaiTapLonCShap.frmSuaNhaCungCap.resources
+D:\BaiTapLonCShap-master\BaiTapLonCShap\obj\Debug\BaiTapLonCShap.frmSuaNhanVien.resources
+D:\BaiTapLonCShap-master\BaiTapLonCShap\obj\Debug\BaiTapLonCShap.frmThemHang.resources
+D:\BaiTapLonCShap-master\BaiTapLonCShap\obj\Debug\BaiTapLonCShap.frmThemKhachHang.resources
+D:\BaiTapLonCShap-master\BaiTapLonCShap\obj\Debug\BaiTapLonCShap.frmThemLichSuGia.resources
+D:\BaiTapLonCShap-master\BaiTapLonCShap\obj\Debug\BaiTapLonCShap.frmThemLoaiHang.resources
+D:\BaiTapLonCShap-master\BaiTapLonCShap\obj\Debug\BaiTapLonCShap.frmThemNhaCungCap.resources
+D:\BaiTapLonCShap-master\BaiTapLonCShap\obj\Debug\BaiTapLonCShap.frmThemNhanVien.resources
+D:\BaiTapLonCShap-master\BaiTapLonCShap\obj\Debug\BaiTapLonCShap.frmXoaHang.resources
+D:\BaiTapLonCShap-master\BaiTapLonCShap\obj\Debug\BaiTapLonCShap.frmXoaKhachHang.resources
+D:\BaiTapLonCShap-master\BaiTapLonCShap\obj\Debug\BaiTapLonCShap.frmXoaLichSuGia.resources
+D:\BaiTapLonCShap-master\BaiTapLonCShap\obj\Debug\BaiTapLonCShap.frmXoaLoaiHang.resources
+D:\BaiTapLonCShap-master\BaiTapLonCShap\obj\Debug\BaiTapLonCShap.frmXoaNhaCungCap.resources
+D:\BaiTapLonCShap-master\BaiTapLonCShap\obj\Debug\BaiTapLonCShap.frmXoaNhanVien.resources
+D:\BaiTapLonCShap-master\BaiTapLonCShap\obj\Debug\BaiTapLonCShap.Properties.Resources.resources
+D:\BaiTapLonCShap-master\BaiTapLonCShap\obj\Debug\BaiTapLonCShap.csproj.GenerateResource.Cache
+D:\BaiTapLonCShap-master\BaiTapLonCShap\obj\Debug\RdlCompile.cache
+D:\BaiTapLonCShap-master\BaiTapLonCShap\obj\Debug\RdlCompile.compiled

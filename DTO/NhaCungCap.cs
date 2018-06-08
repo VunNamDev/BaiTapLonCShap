@@ -73,5 +73,11 @@ namespace DTO
             this.DiaChi = diaChi;
             this.SoDienThoai = soDienThoai;
         }
+
+        public NhaCungCap(string maNhaCungCap, string tenNhaCungCap)
+        {
+            this.MaNhaCungCap = maNhaCungCap;
+            this.TenNhaCungCap = tenNhaCungCap;
+        }
     }
 }

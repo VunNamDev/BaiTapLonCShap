@@ -4,6 +4,9 @@
 
     partial class QLBHDataSet
     {
+        partial class v1DataTable
+        {
+        }
     }
 }
 

@@ -49,7 +49,7 @@ namespace BaiTapLonCShap
                 MessageBox.Show("Sửa lịch sử giá thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 this.Close();
             }
-            catch (Exception ex)
+            catch (Exception )
             {
                 MessageBox.Show("Sửa thất bại");
             }
@@ -177,6 +177,15 @@ namespace BaiTapLonCShap
         private void dtNgayBatDau_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnHuy_Click(object sender, EventArgs e)
+        {
+            DialogResult dl = MessageBox.Show("Bạn muốn hủy thao tác sửa lịch sử giá?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (dl == DialogResult.Yes)
+            {
+                this.Close();
+            }
         }
     }
 }

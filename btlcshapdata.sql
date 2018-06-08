@@ -187,6 +187,42 @@ insert into HoaDonChiTiet values('HD16','MH4',65)
 insert into HoaDonChiTiet values('HD17','MH7',17)
 insert into HoaDonChiTiet values('HD18','MH1',36)
 
+
+
+alter view uc2
+as
+(
+	select tenHang,donViTinh,Hang.soLuongCo-sum(soLuong) as 'slton',ghiChu,ngayLap 
+	from Hang inner join LoaiHang on Hang.maLoai=LoaiHang.maLoai 
+	inner join HoaDonChiTiet on Hang.maHang = HoaDonChiTiet.maHang 
+	inner join LichSuGia on Hang.maHang= LichSuGia.maHang 
+	inner join HoaDon on HoaDonChiTiet.maHoaDon=HoaDon.maHoaDon
+	
+	group by tenHang,donViTinh,ghiChu,soLuongCo,ngayLap
+
+)
+alter view uc1
+as
+(
+	SELECT     Hang.tenHang, Hang.donViTinh, HoaDonChiTiet.soLuong, Hang.donGia, HoaDonChiTiet.soLuong * Hang.donGia AS thanhTien, HoaDon.ngayLap
+	FROM       Hang INNER JOIN
+                      	HoaDonChiTiet ON Hang.maHang = HoaDonChiTiet.maHang INNER JOIN
+                	      HoaDon ON HoaDonChiTiet.maHoaDon = HoaDon.maHoaDon INNER JOIN
+        	              NhanVien ON HoaDon.maNhanVien = NhanVien.maNhanVien
+	GROUP BY Hang.tenHang, Hang.donViTinh, HoaDonChiTiet.soLuong, Hang.donGia, HoaDon.ngayLap
+)
+alter view v1
+as
+(
+	SELECT     HoaDon.ngayLap, SUM(HoaDonChiTiet.soLuong * Hang.donGia) AS gia
+	FROM         HoaDon INNER JOIN
+	                      HoaDonChiTiet ON HoaDon.maHoaDon = HoaDonChiTiet.maHoaDon INNER JOIN
+	                      Hang ON Hang.maHang = HoaDonChiTiet.maHang
+	GROUP BY HoaDon.ngayLap
+)
+
+
+
 SELECT * FROM NhaCungCap
 SELECT * FROM KhachHang
 SELECT * FROM NhanVien

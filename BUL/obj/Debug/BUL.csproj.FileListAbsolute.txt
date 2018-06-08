@@ -25,3 +25,40 @@ C:\Users\Dell ALL\Pictures\BaiTapLonCShap\BaiTapLonCShap\BUL\bin\Debug\DAL.dll
 C:\Users\Dell ALL\Pictures\BaiTapLonCShap\BaiTapLonCShap\BUL\bin\Debug\DTO.dll
 C:\Users\Dell ALL\Pictures\BaiTapLonCShap\BaiTapLonCShap\BUL\bin\Debug\DAL.pdb
 C:\Users\Dell ALL\Pictures\BaiTapLonCShap\BaiTapLonCShap\BUL\bin\Debug\DTO.pdb
+D:\BaiTapLonWindown\HoanThienHan\BaiTapLonCShap-master\BUL\bin\Debug\BUL.dll
+D:\BaiTapLonWindown\HoanThienHan\BaiTapLonCShap-master\BUL\bin\Debug\BUL.pdb
+D:\BaiTapLonWindown\HoanThienHan\BaiTapLonCShap-master\BUL\bin\Debug\DAL.dll
+D:\BaiTapLonWindown\HoanThienHan\BaiTapLonCShap-master\BUL\bin\Debug\DTO.dll
+D:\BaiTapLonWindown\HoanThienHan\BaiTapLonCShap-master\BUL\bin\Debug\DAL.pdb
+D:\BaiTapLonWindown\HoanThienHan\BaiTapLonCShap-master\BUL\bin\Debug\DTO.pdb
+D:\BaiTapLonWindown\HoanThienHan\BaiTapLonCShap-master\BUL\obj\Debug\BUL.csprojResolveAssemblyReference.cache
+D:\BaiTapLonWindown\HoanThienHan\BaiTapLonCShap-master\BUL\obj\Debug\BUL.csproj.CoreCompileInputs.cache
+D:\BaiTapLonWindown\HoanThienHan\BaiTapLonCShap-master\BUL\obj\Debug\BUL.dll
+D:\BaiTapLonWindown\HoanThienHan\BaiTapLonCShap-master\BUL\obj\Debug\BUL.pdb
+C:\Users\TrongGiang\Desktop\HoanThienHan\BaiTapLonCShap-master\BUL\bin\Debug\BUL.dll
+C:\Users\TrongGiang\Desktop\HoanThienHan\BaiTapLonCShap-master\BUL\bin\Debug\BUL.pdb
+C:\Users\TrongGiang\Desktop\HoanThienHan\BaiTapLonCShap-master\BUL\bin\Debug\DAL.dll
+C:\Users\TrongGiang\Desktop\HoanThienHan\BaiTapLonCShap-master\BUL\bin\Debug\DTO.dll
+C:\Users\TrongGiang\Desktop\HoanThienHan\BaiTapLonCShap-master\BUL\bin\Debug\DAL.pdb
+C:\Users\TrongGiang\Desktop\HoanThienHan\BaiTapLonCShap-master\BUL\bin\Debug\DTO.pdb
+C:\Users\TrongGiang\Desktop\HoanThienHan\BaiTapLonCShap-master\BUL\obj\Debug\BUL.csprojResolveAssemblyReference.cache
+C:\Users\TrongGiang\Desktop\HoanThienHan\BaiTapLonCShap-master\BUL\obj\Debug\BUL.dll
+C:\Users\TrongGiang\Desktop\HoanThienHan\BaiTapLonCShap-master\BUL\obj\Debug\BUL.pdb
+C:\Users\TrongGiang\Desktop\HoanThienHan - Copy\BaiTapLonCShap-master\BUL\bin\Debug\BUL.dll
+C:\Users\TrongGiang\Desktop\HoanThienHan - Copy\BaiTapLonCShap-master\BUL\bin\Debug\BUL.pdb
+C:\Users\TrongGiang\Desktop\HoanThienHan - Copy\BaiTapLonCShap-master\BUL\bin\Debug\DAL.dll
+C:\Users\TrongGiang\Desktop\HoanThienHan - Copy\BaiTapLonCShap-master\BUL\bin\Debug\DTO.dll
+C:\Users\TrongGiang\Desktop\HoanThienHan - Copy\BaiTapLonCShap-master\BUL\bin\Debug\DAL.pdb
+C:\Users\TrongGiang\Desktop\HoanThienHan - Copy\BaiTapLonCShap-master\BUL\bin\Debug\DTO.pdb
+C:\Users\TrongGiang\Desktop\HoanThienHan - Copy\BaiTapLonCShap-master\BUL\obj\Debug\BUL.csprojResolveAssemblyReference.cache
+C:\Users\TrongGiang\Desktop\HoanThienHan - Copy\BaiTapLonCShap-master\BUL\obj\Debug\BUL.dll
+C:\Users\TrongGiang\Desktop\HoanThienHan - Copy\BaiTapLonCShap-master\BUL\obj\Debug\BUL.pdb
+C:\Users\TrongGiang\Desktop\HoanThienHan - Copy - Copy (2)\BaiTapLonCShap-master\BUL\bin\Debug\BUL.dll
+C:\Users\TrongGiang\Desktop\HoanThienHan - Copy - Copy (2)\BaiTapLonCShap-master\BUL\bin\Debug\BUL.pdb
+C:\Users\TrongGiang\Desktop\HoanThienHan - Copy - Copy (2)\BaiTapLonCShap-master\BUL\bin\Debug\DAL.dll
+C:\Users\TrongGiang\Desktop\HoanThienHan - Copy - Copy (2)\BaiTapLonCShap-master\BUL\bin\Debug\DTO.dll
+C:\Users\TrongGiang\Desktop\HoanThienHan - Copy - Copy (2)\BaiTapLonCShap-master\BUL\bin\Debug\DAL.pdb
+C:\Users\TrongGiang\Desktop\HoanThienHan - Copy - Copy (2)\BaiTapLonCShap-master\BUL\bin\Debug\DTO.pdb
+C:\Users\TrongGiang\Desktop\HoanThienHan - Copy - Copy (2)\BaiTapLonCShap-master\BUL\obj\Debug\BUL.dll
+C:\Users\TrongGiang\Desktop\HoanThienHan - Copy - Copy (2)\BaiTapLonCShap-master\BUL\obj\Debug\BUL.pdb
+C:\Users\TrongGiang\Desktop\HoanThienHan - Copy - Copy (2)\BaiTapLonCShap-master\BUL\obj\Debug\BUL.csprojResolveAssemblyReference.cache

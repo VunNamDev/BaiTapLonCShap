@@ -17,7 +17,7 @@ namespace DAL
             {
                 connect.Open();
             }
-            catch(Exception ex){ }
+            catch(Exception ){ }
         }
         public static void dongKetNoi()
         {
@@ -26,7 +26,7 @@ namespace DAL
             {
                 connect.Close();
             }
-            catch (Exception ex) { }
+            catch (Exception ) { }
         }
     }
 }

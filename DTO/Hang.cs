@@ -118,5 +118,9 @@ namespace DTO
             this.SoLuongCo = soLuongCo;
             this.MaNhaCungCap = maNhaCungCap;
         }
+        public Hang(string maHang)
+        {
+            this.maHang = maHang;
+        }
     }
 }

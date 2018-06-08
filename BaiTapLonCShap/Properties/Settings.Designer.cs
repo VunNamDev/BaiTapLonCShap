@@ -26,10 +26,21 @@ namespace BaiTapLonCShap.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=(local);Initial Catalog=QLBH;Integrated Security=True")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-POPBK26\\SQLEXPRESS;Initial Catalog=QLBH;Integrated Security=T" +
+            "rue")]
         public string QLBHConnectionString {
             get {
                 return ((string)(this["QLBHConnectionString"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=(local);Initial Catalog=QLBH;Integrated Security=True")]
+        public string QLBHDataSetUC1 {
+            get {
+                return ((string)(this["QLBHDataSetUC1"]));
             }
         }
     }

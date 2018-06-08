@@ -17,3 +17,31 @@ C:\Users\Dell ALL\Pictures\BaiTapLonCShap\BaiTapLonCShap\DAL\bin\Debug\DTO.dll
 C:\Users\Dell ALL\Pictures\BaiTapLonCShap\BaiTapLonCShap\DAL\bin\Debug\DTO.pdb
 C:\Users\Dell ALL\Pictures\BaiTapLonCShap\BaiTapLonCShap\DAL\obj\Debug\DAL.dll
 C:\Users\Dell ALL\Pictures\BaiTapLonCShap\BaiTapLonCShap\DAL\obj\Debug\DAL.pdb
+D:\BaiTapLonWindown\HoanThienHan\BaiTapLonCShap-master\DAL\bin\Debug\DAL.dll
+D:\BaiTapLonWindown\HoanThienHan\BaiTapLonCShap-master\DAL\bin\Debug\DAL.pdb
+D:\BaiTapLonWindown\HoanThienHan\BaiTapLonCShap-master\DAL\bin\Debug\DTO.dll
+D:\BaiTapLonWindown\HoanThienHan\BaiTapLonCShap-master\DAL\bin\Debug\DTO.pdb
+D:\BaiTapLonWindown\HoanThienHan\BaiTapLonCShap-master\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+D:\BaiTapLonWindown\HoanThienHan\BaiTapLonCShap-master\DAL\obj\Debug\DAL.dll
+D:\BaiTapLonWindown\HoanThienHan\BaiTapLonCShap-master\DAL\obj\Debug\DAL.pdb
+C:\Users\TrongGiang\Desktop\HoanThienHan\BaiTapLonCShap-master\DAL\bin\Debug\DAL.dll
+C:\Users\TrongGiang\Desktop\HoanThienHan\BaiTapLonCShap-master\DAL\bin\Debug\DAL.pdb
+C:\Users\TrongGiang\Desktop\HoanThienHan\BaiTapLonCShap-master\DAL\bin\Debug\DTO.dll
+C:\Users\TrongGiang\Desktop\HoanThienHan\BaiTapLonCShap-master\DAL\bin\Debug\DTO.pdb
+C:\Users\TrongGiang\Desktop\HoanThienHan\BaiTapLonCShap-master\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+C:\Users\TrongGiang\Desktop\HoanThienHan\BaiTapLonCShap-master\DAL\obj\Debug\DAL.dll
+C:\Users\TrongGiang\Desktop\HoanThienHan\BaiTapLonCShap-master\DAL\obj\Debug\DAL.pdb
+C:\Users\TrongGiang\Desktop\HoanThienHan - Copy\BaiTapLonCShap-master\DAL\bin\Debug\DAL.dll
+C:\Users\TrongGiang\Desktop\HoanThienHan - Copy\BaiTapLonCShap-master\DAL\bin\Debug\DAL.pdb
+C:\Users\TrongGiang\Desktop\HoanThienHan - Copy\BaiTapLonCShap-master\DAL\bin\Debug\DTO.dll
+C:\Users\TrongGiang\Desktop\HoanThienHan - Copy\BaiTapLonCShap-master\DAL\bin\Debug\DTO.pdb
+C:\Users\TrongGiang\Desktop\HoanThienHan - Copy\BaiTapLonCShap-master\DAL\obj\Debug\DAL.dll
+C:\Users\TrongGiang\Desktop\HoanThienHan - Copy\BaiTapLonCShap-master\DAL\obj\Debug\DAL.pdb
+C:\Users\TrongGiang\Desktop\HoanThienHan - Copy\BaiTapLonCShap-master\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+C:\Users\TrongGiang\Desktop\HoanThienHan - Copy - Copy (2)\BaiTapLonCShap-master\DAL\bin\Debug\DAL.dll
+C:\Users\TrongGiang\Desktop\HoanThienHan - Copy - Copy (2)\BaiTapLonCShap-master\DAL\bin\Debug\DAL.pdb
+C:\Users\TrongGiang\Desktop\HoanThienHan - Copy - Copy (2)\BaiTapLonCShap-master\DAL\bin\Debug\DTO.dll
+C:\Users\TrongGiang\Desktop\HoanThienHan - Copy - Copy (2)\BaiTapLonCShap-master\DAL\bin\Debug\DTO.pdb
+C:\Users\TrongGiang\Desktop\HoanThienHan - Copy - Copy (2)\BaiTapLonCShap-master\DAL\obj\Debug\DAL.dll
+C:\Users\TrongGiang\Desktop\HoanThienHan - Copy - Copy (2)\BaiTapLonCShap-master\DAL\obj\Debug\DAL.pdb
+C:\Users\TrongGiang\Desktop\HoanThienHan - Copy - Copy (2)\BaiTapLonCShap-master\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
